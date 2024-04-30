@@ -1,8 +1,13 @@
+import { useContext } from "react";
+import { AdminContext } from "../contexts/AdminContext";
+
 function Activities(){
-    return(
-        <>
+    const {admin} = useContext(AdminContext);
+        return(
+            <>
+            {admin && <p>Nesto dodatno za admina</p>}
             <p>Aktivnosti</p>
-        </>
+          </>
     )
 }
 

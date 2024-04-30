@@ -1,0 +1,250 @@
+{
+	"activities": [
+		{
+			"id": "radionica_1",
+			"ime": "Daj 5 za Perle",
+			"datum": "01.01.2025",
+			"predavac": "predavac_1",
+			"opis": "Kratki opis radionice 1",
+			"broj_prijava": 0
+		}
+	],
+	"volunteers": [
+		{
+			"id": "hdu8",
+			"name": "Nikola Nikić",
+			"address": "Split",
+			"association": "Daj 5 za Perle",
+			"ratings_count": 5,
+			"average_score": 5
+		}
+	],
+	"associations": [
+		{
+			"id": "78gv",
+			"ime": "Perle",
+			"opis": "Udruga koja skrbi za djecu i mlade s najtežim tjelesnim invaliditetom i djecu s posebnim potrebama. ",
+			"radionice": [
+				"radionica_1"
+			]
+		}
+	],
+	"adress": [
+		{
+			"id": 1,
+			"name": "Baška Voda"
+		},
+		{
+			"id": 2,
+			"name": "Bol"
+		},
+		{
+			"id": 3,
+			"name": "Brela"
+		},
+		{
+			"id": 4,
+			"name": "Cista Provo"
+		},
+		{
+			"id": 5,
+			"name": "Dicmo"
+		},
+		{
+			"id": 6,
+			"name": "Dugi Rat"
+		},
+		{
+			"id": 7,
+			"name": "Dugopolje"
+		},
+		{
+			"id": 8,
+			"name": "Gradac"
+		},
+		{
+			"id": 9,
+			"name": "Hrvace"
+		},
+		{
+			"id": 10,
+			"name": "Hvar"
+		},
+		{
+			"id": 11,
+			"name": "Imotski"
+		},
+		{
+			"id": 12,
+			"name": "Jelsa"
+		},
+		{
+			"id": 13,
+			"name": "Kaštela"
+		},
+		{
+			"id": 14,
+			"name": "Klis"
+		},
+		{
+			"id": 15,
+			"name": "Komiža"
+		},
+		{
+			"id": 16,
+			"name": "Lećevica"
+		},
+		{
+			"id": 17,
+			"name": "Lokvičići"
+		},
+		{
+			"id": 18,
+			"name": "Lovreć"
+		},
+		{
+			"id": 19,
+			"name": "Makarska"
+		},
+		{
+			"id": 20,
+			"name": "Marina"
+		},
+		{
+			"id": 21,
+			"name": "Milna"
+		},
+		{
+			"id": 22,
+			"name": "Muć"
+		},
+		{
+			"id": 23,
+			"name": "Nerežišća"
+		},
+		{
+			"id": 24,
+			"name": "Okrug"
+		},
+		{
+			"id": 25,
+			"name": "Omiš"
+		},
+		{
+			"id": 26,
+			"name": "Otok"
+		},
+		{
+			"id": 27,
+			"name": "Podbablje"
+		},
+		{
+			"id": 28,
+			"name": "Podgora"
+		},
+		{
+			"id": 29,
+			"name": "Podstrana"
+		},
+		{
+			"id": 30,
+			"name": "Postira"
+		},
+		{
+			"id": 31,
+			"name": "Prgomet"
+		},
+		{
+			"id": 32,
+			"name": "Primorski Dolac"
+		},
+		{
+			"id": 33,
+			"name": "Proložac"
+		},
+		{
+			"id": 34,
+			"name": "Pučišća"
+		},
+		{
+			"id": 35,
+			"name": "Runovići"
+		},
+		{
+			"id": 36,
+			"name": "Seget"
+		},
+		{
+			"id": 37,
+			"name": "Selca"
+		},
+		{
+			"id": 38,
+			"name": "Sinj"
+		},
+		{
+			"id": 39,
+			"name": "Solina"
+		},
+		{
+			"id": 40,
+			"name": "Split"
+		},
+		{
+			"id": 41,
+			"name": "Stari Grad"
+		},
+		{
+			"id": 42,
+			"name": "Sućuraj"
+		},
+		{
+			"id": 43,
+			"name": "Sutivan"
+		},
+		{
+			"id": 44,
+			"name": "Supetar"
+		},
+		{
+			"id": 45,
+			"name": "Sutivan"
+		},
+		{
+			"id": 46,
+			"name": "Trogir"
+		},
+		{
+			"id": 47,
+			"name": "Trilj"
+		},
+		{
+			"id": 48,
+			"name": "Tučepi"
+		},
+		{
+			"id": 49,
+			"name": "Vis"
+		},
+		{
+			"id": 50,
+			"name": "Vrgorac"
+		},
+		{
+			"id": 51,
+			"name": "Vrlika"
+		},
+		{
+			"id": 52,
+			"name": "Zadvarje"
+		},
+		{
+			"id": 53,
+			"name": "Zagvozd"
+		},
+		{
+			"id": 54,
+			"name": "Zmijavci"
+		}
+	]
+}
