@@ -4,7 +4,7 @@ import { AdminContext } from "../contexts/AdminContext";
 import { FontAwesomeIcon, faHouseChimney, faTrashCan, faPenToSquare, faHandHoldingHeart, faPhone } from '../icons/iconImports';
 import {DeleteVolunteer, EditVolunteer, VolunteerCommentAndRating } from "./"
 
-function VolunteerCard({ volunteer, setVolunteers }) {
+function VolunteerCard({ volunteer, setVolunteers, updateAll }) {
 
   const [randomImage, setRandomImage] = useState('');
   const {admin} = useContext(AdminContext);
@@ -23,7 +23,6 @@ function VolunteerCard({ volunteer, setVolunteers }) {
     }    fetchRandomImage();
   }, []);
 
-  
 
   return (
     <div className={`col-lg-${admin ? "6" : "3"} mt-4`}>
@@ -45,6 +44,7 @@ function VolunteerCard({ volunteer, setVolunteers }) {
                 volunteer={volunteer} 
                 setVolunteers={setVolunteers} 
                 setEditModeOn={setEditModeOn}
+                updateAll={updateAll}
               />
             ) : (
             <>
@@ -64,7 +64,7 @@ function VolunteerCard({ volunteer, setVolunteers }) {
           
               {admin && (
                 <div className="ikonice">
-                  <DeleteVolunteer id={volunteer.id} setVolunteers= {setVolunteers}></DeleteVolunteer>
+                  <DeleteVolunteer id={volunteer.id} setVolunteers= {setVolunteers} updateAll={updateAll}></DeleteVolunteer>
                   <FontAwesomeIcon icon={faPenToSquare} onClick={() => setEditModeOn(true)} />
                 </div>
               )}

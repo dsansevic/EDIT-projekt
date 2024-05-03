@@ -4,7 +4,7 @@ import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
 import axios from "axios";
 
-function AddNewVolunteer({setVolunteers, volunteers}) {
+function AddNewVolunteer({setVolunteers, updateAll}) {
     const [formData, setFormData] = useState({
         name: "",
         contact_number: "",
@@ -80,6 +80,7 @@ function AddNewVolunteer({setVolunteers, volunteers}) {
         axios.post('http://localhost:3001/volunteers', dataToSend)
         .then(res => {
             setVolunteers(prevState => [...prevState, res.data]);
+            updateAll(prevState => [...prevState, res.data]);
             })
             .catch(error => {
                 console.error("Error adding new volunteer: ", error);

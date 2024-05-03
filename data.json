@@ -144,27 +144,11 @@
       "comments": []
     },
     {
-      "id": "2037",
-      "name": "asd gs",
-      "town": "Baška Voda",
-      "image": "",
-      "association": "",
-      "contact_number": "3856486849",
-      "jobs": [
-        "Prijevoz",
-        "Organizacija događaja"
-      ],
-      "grades": [],
-      "average_grade": "",
-      "grade_count": "",
-      "comments": []
-    },
-    {
       "id": "a5e4",
       "name": "nevena pehar",
-      "town": "Lovreć",
+      "town": "Lokvičići",
       "image": "",
-      "association": "",
+      "association": "Udruga Perle",
       "contact_number": "385932040234",
       "jobs": [
         "Briga o životinjama",
@@ -182,10 +166,27 @@
       "name": "Paula Peronja",
       "town": "Split",
       "image": "",
-      "association": "",
-      "contact_number": "385768758",
+      "association": "Udruga Zvijezda",
+      "contact_number": "385768757",
       "jobs": [
         "Prijevoz"
+      ],
+      "grades": [],
+      "average_grade": "",
+      "grade_count": "",
+      "comments": [
+        {}
+      ]
+    },
+    {
+      "id": "969f",
+      "name": "Petra Svilović",
+      "town": "Split",
+      "image": "",
+      "association": "Udruga Loki",
+      "contact_number": "38564868468",
+      "jobs": [
+        "Briga o životinjama"
       ],
       "grades": [],
       "average_grade": "",

@@ -150,3 +150,7 @@ p {
     align-items: center;
     gap: 7px;
 }
+/* to hide Odaberi grad */
+.form-select:focus option[value=""] {
+    display: none;
+}

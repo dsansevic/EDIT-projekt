@@ -22,6 +22,7 @@ function TownSelect({value, onChange}){
                 onChange={onChange}
                 required
               >
+                <option value="" >Odaberi grad</option>
                 {town.map(town => (
                   <option key={town.id} value={town.name}>
                     {town.name}
@@ -31,5 +32,6 @@ function TownSelect({value, onChange}){
           </div>
       </div>);
 }
+
 
 export default TownSelect;

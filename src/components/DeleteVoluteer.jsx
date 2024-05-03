@@ -2,13 +2,14 @@ import axios from "axios";
 import { useState } from "react";
 import {FontAwesomeIcon, faTrashCan} from '../icons/iconImports'
 
-function DeleteVolunteer({id, setVolunteers})
+function DeleteVolunteer({id, setVolunteers, updateAll})
 {
     const [deleteState, setDeleteState] = useState(false);
     async function deleteById() {
         await axios.delete(`http://localhost:3001/volunteers/${id}`);   
         const rez = await axios.get("http://localhost:3001/volunteers");
         setVolunteers(rez.data);
+        updateAll(rez.data);
     }
 
     return(
