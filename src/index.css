@@ -3,14 +3,14 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
+  color-scheme: light;
   color: black;
   background-color: rgb(200, 228, 227);
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+input, select, button {
+  background-color: white;
+  color: purple;
 }
 
 a {
@@ -32,38 +32,24 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 6em;
   line-height: 1.1;
+  font-weight: 700;
+  padding: 10px 0 20px 40px;
+  color: rgb(9, 206, 220);
+  letter-spacing: .2rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  /* background: url(https://img.freepik.com/free-vector/gradient-blue-dynamic-lines-background_23-2148995926.jpg) no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip:text;
+  background-clip:text;  
+  border-bottom: 2px solid rgb(243, 196, 251);*/
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.nav-link.active {
+  color: rgb(155, 104, 8) !important;
+  transition: 0.3s;
 }

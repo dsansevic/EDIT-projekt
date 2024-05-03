@@ -27,7 +27,7 @@ function Navbar() {
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         {navLinks.map(({ to, text }) => (
                             <li key={to} className="nav-item">
-                                <NavLink className="nav-link" activeClassName="active" to={to}>{text}</NavLink>
+                                <NavLink className="nav-link px-3" activeClassName="active" to={to}>{text}</NavLink>
                             </li>
                         ))}
                     </ul>

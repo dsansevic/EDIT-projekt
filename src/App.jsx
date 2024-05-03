@@ -1,6 +1,6 @@
 import './App.css';
 import page from './pages';
-import Navbar from './components/NavBar';
+import Navbar from './components/NavBar'; // kasnije iz indexa dohvatit
 import {Routes, Route} from 'react-router-dom';
 import { AdminContext } from './contexts/AdminContext';
 import { useMemo, useState } from 'react';

@@ -1,250 +1,478 @@
 {
-	"activities": [
-		{
-			"id": "radionica_1",
-			"ime": "Daj 5 za Perle",
-			"datum": "01.01.2025",
-			"predavac": "predavac_1",
-			"opis": "Kratki opis radionice 1",
-			"broj_prijava": 0
-		}
-	],
-	"volunteers": [
-		{
-			"id": "hdu8",
-			"name": "Nikola Nikić",
-			"address": "Split",
-			"association": "Daj 5 za Perle",
-			"ratings_count": 5,
-			"average_score": 5
-		}
-	],
-	"associations": [
-		{
-			"id": "78gv",
-			"ime": "Perle",
-			"opis": "Udruga koja skrbi za djecu i mlade s najtežim tjelesnim invaliditetom i djecu s posebnim potrebama. ",
-			"radionice": [
-				"radionica_1"
-			]
-		}
-	],
-	"adress": [
-		{
-			"id": 1,
-			"name": "Baška Voda"
-		},
-		{
-			"id": 2,
-			"name": "Bol"
-		},
-		{
-			"id": 3,
-			"name": "Brela"
-		},
-		{
-			"id": 4,
-			"name": "Cista Provo"
-		},
-		{
-			"id": 5,
-			"name": "Dicmo"
-		},
-		{
-			"id": 6,
-			"name": "Dugi Rat"
-		},
-		{
-			"id": 7,
-			"name": "Dugopolje"
-		},
-		{
-			"id": 8,
-			"name": "Gradac"
-		},
-		{
-			"id": 9,
-			"name": "Hrvace"
-		},
-		{
-			"id": 10,
-			"name": "Hvar"
-		},
-		{
-			"id": 11,
-			"name": "Imotski"
-		},
-		{
-			"id": 12,
-			"name": "Jelsa"
-		},
-		{
-			"id": 13,
-			"name": "Kaštela"
-		},
-		{
-			"id": 14,
-			"name": "Klis"
-		},
-		{
-			"id": 15,
-			"name": "Komiža"
-		},
-		{
-			"id": 16,
-			"name": "Lećevica"
-		},
-		{
-			"id": 17,
-			"name": "Lokvičići"
-		},
-		{
-			"id": 18,
-			"name": "Lovreć"
-		},
-		{
-			"id": 19,
-			"name": "Makarska"
-		},
-		{
-			"id": 20,
-			"name": "Marina"
-		},
-		{
-			"id": 21,
-			"name": "Milna"
-		},
-		{
-			"id": 22,
-			"name": "Muć"
-		},
-		{
-			"id": 23,
-			"name": "Nerežišća"
-		},
-		{
-			"id": 24,
-			"name": "Okrug"
-		},
-		{
-			"id": 25,
-			"name": "Omiš"
-		},
-		{
-			"id": 26,
-			"name": "Otok"
-		},
-		{
-			"id": 27,
-			"name": "Podbablje"
-		},
-		{
-			"id": 28,
-			"name": "Podgora"
-		},
-		{
-			"id": 29,
-			"name": "Podstrana"
-		},
-		{
-			"id": 30,
-			"name": "Postira"
-		},
-		{
-			"id": 31,
-			"name": "Prgomet"
-		},
-		{
-			"id": 32,
-			"name": "Primorski Dolac"
-		},
-		{
-			"id": 33,
-			"name": "Proložac"
-		},
-		{
-			"id": 34,
-			"name": "Pučišća"
-		},
-		{
-			"id": 35,
-			"name": "Runovići"
-		},
-		{
-			"id": 36,
-			"name": "Seget"
-		},
-		{
-			"id": 37,
-			"name": "Selca"
-		},
-		{
-			"id": 38,
-			"name": "Sinj"
-		},
-		{
-			"id": 39,
-			"name": "Solina"
-		},
-		{
-			"id": 40,
-			"name": "Split"
-		},
-		{
-			"id": 41,
-			"name": "Stari Grad"
-		},
-		{
-			"id": 42,
-			"name": "Sućuraj"
-		},
-		{
-			"id": 43,
-			"name": "Sutivan"
-		},
-		{
-			"id": 44,
-			"name": "Supetar"
-		},
-		{
-			"id": 45,
-			"name": "Sutivan"
-		},
-		{
-			"id": 46,
-			"name": "Trogir"
-		},
-		{
-			"id": 47,
-			"name": "Trilj"
-		},
-		{
-			"id": 48,
-			"name": "Tučepi"
-		},
-		{
-			"id": 49,
-			"name": "Vis"
-		},
-		{
-			"id": 50,
-			"name": "Vrgorac"
-		},
-		{
-			"id": 51,
-			"name": "Vrlika"
-		},
-		{
-			"id": 52,
-			"name": "Zadvarje"
-		},
-		{
-			"id": 53,
-			"name": "Zagvozd"
-		},
-		{
-			"id": 54,
-			"name": "Zmijavci"
-		}
-	]
+  "activities": [
+    {
+      "id": "per1",
+      "name": "Daj 5 za Perle",
+      "date": "04.09.2024",
+      "association": " Udruga Perle",
+      "info": "Cilj je pomoći našoj djeci osigurati dostatna sredstva za godišnje terapije na otoku. Utrka se sastoji od plivačke dionice u dužini od 12 km, biciklističke dionice u dužini od 100km te 22km trkačke dionice.",
+      "broj_prijava": 0
+    },
+    {
+      "id": "post",
+      "name": "POST – Podrška mladima iz alternativne skrbi",
+      "date": "01.01.2022",
+      "association": "Udruga MoSt",
+      "info": "Projekt je usmjeren na prevenciju socijalne isključenosti mladih iz alternativne skrbi, organizacijom stručne i mentorske podrške te podrške u obrazovanju i jačanju profesionalnih kompetencija.",
+      "broj_prijava": 0
+    }
+  ],
+  "volunteers": [
+    {
+      "id": "hdu8",
+      "name": "Nikola Nikić",
+      "town": "Stari Grad",
+      "image": "",
+      "association": "Udruga Perle",
+      "contact_number": "3858751877",
+      "jobs": [
+        "Organizacija događaja",
+        "Čišćenje"
+      ],
+      "grades": [
+        4,
+        5,
+        3
+      ],
+      "average_grade": 4,
+      "grade_count": 3,
+      "comments": [
+        {
+          "id": 1,
+          "tekst": "Vrlo susretljiv i pouzdan volonter.",
+          "korisnik": "Ana"
+        },
+        {
+          "id": 2,
+          "tekst": "Uvijek spreman pomoći, toplo preporučam!",
+          "korisnik": "Ivan"
+        }
+      ]
+    },
+    {
+      "id": "a44g",
+      "name": "Petra Sarić",
+      "town": "Makarska",
+      "association": "Udruga Zvijezda",
+      "contact_number": "385998574877",
+      "jobs": [
+        "Prijevoz"
+      ],
+      "grades": [
+        4,
+        5,
+        3
+      ],
+      "average_grade": 4,
+      "grade_count": 3,
+      "image": "",
+      "comments": [
+        {
+          "id": 1,
+          "tekst": "Vrlo predana volonterka, uvijek spremna pomoći!",
+          "korisnik": "Ana"
+        },
+        {
+          "id": 2,
+          "tekst": "Izvrsno se snalazi u stresnim situacijama.",
+          "korisnik": "Ivan"
+        }
+      ]
+    },
+    {
+      "id": "9d30",
+      "name": "Iva Runjić",
+      "town": "Dicmo",
+      "image": "",
+      "association": "",
+      "contact_number": "3856849849",
+      "jobs": [
+        "Organizacija događaja"
+      ],
+      "grades": [],
+      "average_grade": "",
+      "grade_count": "",
+      "comments": []
+    },
+    {
+      "id": "520f",
+      "name": "das sad",
+      "town": "Baška Voda",
+      "image": "",
+      "association": "",
+      "contact_number": "3850980980",
+      "jobs": [
+        "Organizacija događaja",
+        "Ekologija"
+      ],
+      "grades": [],
+      "average_grade": "",
+      "grade_count": "",
+      "comments": []
+    },
+    {
+      "id": "c261",
+      "name": "d a",
+      "town": "Baška Voda",
+      "image": "",
+      "association": "",
+      "contact_number": "3852343423",
+      "jobs": [
+        "Prijevoz",
+        "Edukacija"
+      ],
+      "grades": [],
+      "average_grade": "",
+      "grade_count": "",
+      "comments": []
+    },
+    {
+      "id": "b29d",
+      "name": "lea larić",
+      "town": "Trogir",
+      "image": "C:\\fakepath\\Volunteering-cuate.png",
+      "association": "",
+      "contact_number": "38564868468",
+      "jobs": [
+        "Edukacija",
+        "Medicinska pomoć",
+        "Briga o osobama s posebnim potrebama"
+      ],
+      "grades": [],
+      "average_grade": "",
+      "grade_count": "",
+      "comments": []
+    },
+    {
+      "id": "2037",
+      "name": "asd gs",
+      "town": "Baška Voda",
+      "image": "",
+      "association": "",
+      "contact_number": "3856486849",
+      "jobs": [
+        "Prijevoz",
+        "Organizacija događaja"
+      ],
+      "grades": [],
+      "average_grade": "",
+      "grade_count": "",
+      "comments": []
+    },
+    {
+      "id": "a5e4",
+      "name": "nevena pehar",
+      "town": "Lovreć",
+      "image": "",
+      "association": "",
+      "contact_number": "385932040234",
+      "jobs": [
+        "Briga o životinjama",
+        "Ekologija"
+      ],
+      "grades": [],
+      "average_grade": "",
+      "grade_count": "",
+      "comments": [
+        {}
+      ]
+    },
+    {
+      "id": "e5b9",
+      "name": "Paula Peronja",
+      "town": "Split",
+      "image": "",
+      "association": "",
+      "contact_number": "385768758",
+      "jobs": [
+        "Prijevoz"
+      ],
+      "grades": [],
+      "average_grade": "",
+      "grade_count": "",
+      "comments": [
+        {}
+      ]
+    }
+  ],
+  "associations": [
+    {
+      "id": "78gv",
+      "name": "Udruga Perle",
+      "info": "Udruga djece i mladih s najtežim tjelesnim invaliditetom i djece s posebnim potrebama, roditelja skrbnika i volontera Perle” osnovana je s ciljem postizanja i razvoja djece i mladih, rada s djecom s poteškoćama u razvoju te poticanja harmoničnog razvoja djece i mladih.",
+      "activities": [
+        "per1"
+      ]
+    },
+    {
+      "id": "nsd8",
+      "name": "Udruga Mi",
+      "info": "Udruga MI- Split od svog osnutka 1997. provodi programe potpore građanima i razvoja zajednice poticanjem suradnje, solidarnosti i uključivanja građana, u cilju uspostavljanja društene kohezije",
+      "activities": []
+    },
+    {
+      "id": "mos2",
+      "name": "Udruga MoSt",
+      "info": "Udruga MoSt je nevladina organizacija sa sjedištem u Splitu, s lokalnim, regionalnim i nacionalnim djelovanjem koja na vrijednostima volonterskog rada, humanosti, solidarnosti, poštivanju različitosti i ljudskih prava pruža konkretnu pomoć potrebitima i podiže kvalitetu života djece, mladih i građana drugih dobnih kategorija.",
+      "activities": [
+        "post"
+      ]
+    }
+  ],
+  "address": [
+    {
+      "id": "1",
+      "name": "Baška Voda"
+    },
+    {
+      "id": "2",
+      "name": "Bol"
+    },
+    {
+      "id": "3",
+      "name": "Brela"
+    },
+    {
+      "id": "4",
+      "name": "Cista Provo"
+    },
+    {
+      "id": "5",
+      "name": "Dicmo"
+    },
+    {
+      "id": "6",
+      "name": "Dugi Rat"
+    },
+    {
+      "id": "7",
+      "name": "Dugopolje"
+    },
+    {
+      "id": "8",
+      "name": "Gradac"
+    },
+    {
+      "id": "9",
+      "name": "Hrvace"
+    },
+    {
+      "id": "10",
+      "name": "Hvar"
+    },
+    {
+      "id": "11",
+      "name": "Imotski"
+    },
+    {
+      "id": "12",
+      "name": "Jelsa"
+    },
+    {
+      "id": "13",
+      "name": "Kaštela"
+    },
+    {
+      "id": "14",
+      "name": "Klis"
+    },
+    {
+      "id": "15",
+      "name": "Komiža"
+    },
+    {
+      "id": "16",
+      "name": "Lećevica"
+    },
+    {
+      "id": "17",
+      "name": "Lokvičići"
+    },
+    {
+      "id": "18",
+      "name": "Lovreć"
+    },
+    {
+      "id": "19",
+      "name": "Makarska"
+    },
+    {
+      "id": "20",
+      "name": "Marina"
+    },
+    {
+      "id": "21",
+      "name": "Milna"
+    },
+    {
+      "id": "22",
+      "name": "Muć"
+    },
+    {
+      "id": "23",
+      "name": "Nerežišća"
+    },
+    {
+      "id": "24",
+      "name": "Okrug"
+    },
+    {
+      "id": "25",
+      "name": "Omiš"
+    },
+    {
+      "id": "26",
+      "name": "Otok"
+    },
+    {
+      "id": "27",
+      "name": "Podbablje"
+    },
+    {
+      "id": "28",
+      "name": "Podgora"
+    },
+    {
+      "id": "29",
+      "name": "Podstrana"
+    },
+    {
+      "id": "30",
+      "name": "Postira"
+    },
+    {
+      "id": "31",
+      "name": "Prgomet"
+    },
+    {
+      "id": "32",
+      "name": "Primorski Dolac"
+    },
+    {
+      "id": "33",
+      "name": "Proložac"
+    },
+    {
+      "id": "34",
+      "name": "Pučišća"
+    },
+    {
+      "id": "35",
+      "name": "Runovići"
+    },
+    {
+      "id": "36",
+      "name": "Seget"
+    },
+    {
+      "id": "37",
+      "name": "Selca"
+    },
+    {
+      "id": "38",
+      "name": "Sinj"
+    },
+    {
+      "id": "39",
+      "name": "Solina"
+    },
+    {
+      "id": "40",
+      "name": "Split"
+    },
+    {
+      "id": "41",
+      "name": "Stari Grad"
+    },
+    {
+      "id": "42",
+      "name": "Sućuraj"
+    },
+    {
+      "id": "43",
+      "name": "Sutivan"
+    },
+    {
+      "id": "44",
+      "name": "Supetar"
+    },
+    {
+      "id": "45",
+      "name": "Sutivan"
+    },
+    {
+      "id": "46",
+      "name": "Trogir"
+    },
+    {
+      "id": "47",
+      "name": "Trilj"
+    },
+    {
+      "id": "48",
+      "name": "Tučepi"
+    },
+    {
+      "id": "49",
+      "name": "Vis"
+    },
+    {
+      "id": "50",
+      "name": "Vrgorac"
+    },
+    {
+      "id": "51",
+      "name": "Vrlika"
+    },
+    {
+      "id": "52",
+      "name": "Zadvarje"
+    },
+    {
+      "id": "53",
+      "name": "Zagvozd"
+    },
+    {
+      "id": "54",
+      "name": "Zmijavci"
+    }
+  ],
+  "jobs": [
+    {
+      "id": "1",
+      "name": "Organizacija događaja"
+    },
+    {
+      "id": "2",
+      "name": "Prijevoz"
+    },
+    {
+      "id": "3",
+      "name": "Briga o životinjama"
+    },
+    {
+      "id": "4",
+      "name": "Ekologija"
+    },
+    {
+      "id": "5",
+      "name": "Edukacija"
+    },
+    {
+      "id": "6",
+      "name": "Čišćenje"
+    },
+    {
+      "id": "7",
+      "name": "Briga o osobama s posebnim potrebama"
+    },
+    {
+      "id": "8",
+      "name": "Medicinska pomoć"
+    },
+    {
+      "id": "9",
+      "name": "Razno"
+    }
+  ]
 }

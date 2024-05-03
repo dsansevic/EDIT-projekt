@@ -1,7 +1,7 @@
-import Home from "./Home"
-import Activities from "./Activities"
-import Associations from "./Associations"
-import Volunteers from "./Volunteers"
+import Home from "./Home/Home"
+import Activities from "./Activities/Activities"
+import Associations from "./Associations/Associations"
+import Volunteers from "./Volunteers/Volunteers"
 
 export default {
     Home,
