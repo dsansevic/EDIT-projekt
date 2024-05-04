@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { AssociationName, AssociationAddress, TownSelect } from "../../inputs";
+import { InputWithIcon, TownSelect } from "../../inputs";
+import { faHandHoldingHeart, faMapLocationDot} from "../../icons/iconImports"
+
 import "./Associations.css";
 
 function AddNewAssociation({ action }) {
@@ -53,9 +55,9 @@ function AddNewAssociation({ action }) {
             {addMode ? (
                 <div className="container">
                     <form onSubmit={handleFormSubmit}>
-                        <AssociationName name="name" value={formData.name} inputChange={inputChange}/>
+                        <InputWithIcon name="name" value={formData.name} icon ={faHandHoldingHeart} inputChange={inputChange}/>
+                        <InputWithIcon name="address" value={formData.address} icon={faMapLocationDot} inputChange={inputChange}/>
                         <TownSelect value={formData.town} onChange={inputChange}/>
-                        <AssociationAddress value={formData.address} inputChange={inputChange}/>
                         <button type='submit' className="btn btn-light btn-md">Pošalji</button>
                     </form>
                 </div>

@@ -9,6 +9,10 @@ import {
     faMapLocationDot, 
     faHandHoldingHeart, 
     faPhone,
+    faHandshakeAngle,
+    faCircleInfo,
+    faEarthEurope,
+    faUsers,
     faSpinner 
 } from '@fortawesome/free-solid-svg-icons';
 
@@ -22,5 +26,9 @@ export {
     faPenToSquare, 
     faHandHoldingHeart, 
     faPhone,
+    faHandshakeAngle,
+    faCircleInfo,
+    faEarthEurope,
+    faUsers,
     faSpinner
 };

@@ -1,7 +1,7 @@
-import { faHandHoldingHeart, FontAwesomeIcon } from "../icons/iconImports"
+import {FontAwesomeIcon,faHandshakeAngle} from "../icons/iconImports"
 import { useRef, useEffect } from "react";
 
-function AssociationName({ name, value, inputChange }) {
+function InputWithIcon({ name, value, inputChange, icon }) {
     const inputRef = useRef(null);
 
     useEffect(() => {
@@ -12,7 +12,7 @@ function AssociationName({ name, value, inputChange }) {
     return (
         <div className="input-group mb-3">
             <span className="input-group-text" id="basic-addon1">
-                <FontAwesomeIcon icon={faHandHoldingHeart} />
+                <FontAwesomeIcon icon={icon} />
             </span>
             <input
                 type="text"
@@ -30,4 +30,4 @@ function AssociationName({ name, value, inputChange }) {
     );
 }
 
-export default AssociationName;
+export default InputWithIcon;

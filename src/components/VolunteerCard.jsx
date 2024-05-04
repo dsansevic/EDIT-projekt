@@ -1,7 +1,7 @@
 import { useState, useEffect, useContext } from "react";
 import { AdminContext } from "../contexts/AdminContext";
 // import { Offcanvas } from 'bootstrap';
-import { FontAwesomeIcon, faHouseChimney, faTrashCan, faPenToSquare, faHandHoldingHeart, faPhone } from '../icons/iconImports';
+import { FontAwesomeIcon, faHouseChimney, faPenToSquare, faHandHoldingHeart, faPhone } from '../icons/iconImports';
 import {Delete, EditVolunteer, VolunteerCommentAndRating } from "./"
 
 function VolunteerCard({ volunteer, setVolunteers, updateAll }) {

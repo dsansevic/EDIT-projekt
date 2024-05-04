@@ -1,6 +1,7 @@
-import { AssociationName, TownSelect } from "../inputs";
+import { InputWithIcon, TownSelect } from "../inputs";
 import { useState } from "react";
 import axios from "axios";
+import {faMapLocationDot, faHandshakeAngle, faCircleInfo, faEarthEurope, faUsers } from "../icons/iconImports"
 
 function AddNewActivity({ setActivities, action }) {
     const [formData, setFormData] = useState({
@@ -46,12 +47,12 @@ function AddNewActivity({ setActivities, action }) {
 
     return (
         <form onSubmit={sendData}>
-            <AssociationName value={formData.name} inputChange={inputChange} name="name"/>
-            <AssociationName value={formData.address} name="address" inputChange={inputChange} />
-            <TownSelect value={formData.town} onChange={inputChange} />
+            <InputWithIcon value={formData.name} inputChange={inputChange} name="name" icon={faHandshakeAngle}/>
+            <InputWithIcon value={formData.address} name="address" inputChange={inputChange} icon={faMapLocationDot} />
+            <InputWithIcon value={formData.info} name="info" inputChange={inputChange} icon={faCircleInfo} />
+            <InputWithIcon value={formData.association} name="association" inputChange={inputChange} icon={faUsers}/>
+            <TownSelect value={formData.town} onChange={inputChange} icon={faEarthEurope}/>
             <input type="date" name="date" value={formData.date} onChange={inputChange} />
-            <AssociationName value={formData.info} name="info" inputChange={inputChange} />
-            <AssociationName value={formData.association} name="association" inputChange={inputChange} />
 
             <button type="submit">Pošalji</button>
             <button onClick={action}>Odustani</button>
