@@ -1,7 +1,7 @@
-function prepareDataForSending({ type, object }) {
+function prepareDataForSending( type, object ) {
     switch (type) {
         case "activity":
-            return ({
+            return {
                 "name": object.name,
                 "date": object.date,
                 "address": object.address,
@@ -9,15 +9,9 @@ function prepareDataForSending({ type, object }) {
                 "association": object.association,
                 "info": object.info,
                 "volunteers": []
-            });
-        case "association":
-            return ({
-                "name": object.name,
-                "town": object.town,
-                "address": object.address
-            });
+            };
         case "volunteer":
-            return ({
+            return {
                 "name": object.name,
                 "town": object.town,
                 "image": object.image,
@@ -28,9 +22,9 @@ function prepareDataForSending({ type, object }) {
                 "average_grade": "",
                 "grade_count": "",
                 "comments": [{}]
-            });
+            };
         default:
-            return ({});
+            return {};
     }
 }
 

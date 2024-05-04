@@ -2,7 +2,7 @@ import { useState} from "react";
 import {Select, JobSelect, NameInput} from "../../inputs"
 import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
-// import prepareDataForSending from "../../PrepareDataForSending";
+import prepareDataForSending from "../../PrepareDataForSending";
 import axios from "axios";
 
 function AddNewVolunteer({setVolunteers, updateAll}) {
@@ -18,20 +18,6 @@ function AddNewVolunteer({setVolunteers, updateAll}) {
         const { name, value } = e.target;      
         setFormData({ ...formData, [name]: value });}
 
-    function dataReadyToSend(object){
-        return {
-            "name" : object.name,
-            "town": object.town,
-            "image": object.image,
-            "association": "",
-            "contact_number": object.contact_number,        
-            "jobs": object.jobs,
-            "grades": [],
-            "average_grade":"",
-            "grade_count":"",
-            "comments": [{}]
-          }
-    }
     const handleJobChange = (jobName, isChecked) => {
         if (isChecked) {
           setFormData(prevState => ({
@@ -75,7 +61,7 @@ function AddNewVolunteer({setVolunteers, updateAll}) {
             return;
           }
 
-        const dataToSend = dataReadyToSend(formData);
+        const dataToSend = prepareDataForSending("volunteer", formData);
         console.log(dataToSend);
           
         axios.post('http://localhost:3001/volunteers', dataToSend)
@@ -87,7 +73,6 @@ function AddNewVolunteer({setVolunteers, updateAll}) {
                 console.error("Error adding new volunteer: ", error);
             });
     }
-
     
     return(
         <div className="card">
@@ -104,7 +89,6 @@ function AddNewVolunteer({setVolunteers, updateAll}) {
                     <div className="input-group mb-2">
                         <input type="file" className="form-control" name = "image" value={formData.image}id="inputGroupFile02" onChange={inputChange}/>
                     </div>
-
                     <button type='submit' className="btn btn-light btn-md">Pošalji</button>
                 </form>
             </div>

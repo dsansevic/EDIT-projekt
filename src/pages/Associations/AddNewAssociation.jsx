@@ -2,7 +2,6 @@ import { useState } from "react";
 import axios from "axios";
 import { InputWithIcon, Select } from "../../inputs";
 import { faHandHoldingHeart, faMapLocationDot} from "../../icons/iconImports"
-
 import "./Associations.css";
 
 function AddNewAssociation({ action }) {
@@ -19,20 +18,11 @@ function AddNewAssociation({ action }) {
         setFormData({ ...formData, [name]: value });
     }
 
-    function dataReadyToSend(object) {
-        return {
-            "name": object.name,
-            "town": object.town,
-            "address": object.address
-        };
-    }
-
     const handleFormSubmit = (e) => {
         e.preventDefault();
         action(prevState => [...prevState, formData]);
-        const dataToSend = dataReadyToSend(formData);
 
-        axios.post('http://localhost:3001/pending_associations', dataToSend)
+        axios.post('http://localhost:3001/pending_associations', formData)
             .then(res => {
                 action(prevState => [...prevState, res.data]);
             })
