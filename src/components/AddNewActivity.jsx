@@ -1,4 +1,4 @@
-import { InputWithIcon, TownSelect } from "../inputs";
+import { InputWithIcon, Select } from "../inputs";
 import { useState } from "react";
 import axios from "axios";
 import {faMapLocationDot, faHandshakeAngle, faCircleInfo, faEarthEurope, faUsers } from "../icons/iconImports"
@@ -51,7 +51,7 @@ function AddNewActivity({ setActivities, action }) {
             <InputWithIcon value={formData.address} name="address" inputChange={inputChange} icon={faMapLocationDot} />
             <InputWithIcon value={formData.info} name="info" inputChange={inputChange} icon={faCircleInfo} />
             <InputWithIcon value={formData.association} name="association" inputChange={inputChange} icon={faUsers}/>
-            <TownSelect value={formData.town} onChange={inputChange} icon={faEarthEurope}/>
+            <Select value={formData.town} onChange={inputChange} name="town" url="address"/>
             <input type="date" name="date" value={formData.date} onChange={inputChange} />
 
             <button type="submit">Pošalji</button>

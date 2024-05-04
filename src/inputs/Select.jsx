@@ -1,15 +1,17 @@
 import axios from "axios";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, name } from "react";
 
-function TownSelect({value, onChange, autoFocus}){
+function Select({value, name, onChange, autoFocus, url}){
     const [town, setTown] = useState([]);
     const selectRef = useRef(null);
 
     useEffect(() => {
-        axios.get("http://localhost:3001/address")
-          .then(res => setTown(res.data))
-          .catch(err => console.error(err.message));
-      }, []);
+      if (url) {
+        axios.get(`http://localhost:3001/${url}`)
+            .then(res => setTown(res.data))
+            .catch(err => console.error(err.message));
+        }
+    }, []);
   
     useEffect(() => {
       if (autoFocus &&selectRef.current) {
@@ -21,16 +23,16 @@ function TownSelect({value, onChange, autoFocus}){
       <div className="form-group mb-3">
           <div className="input-group">
               <div className="input-group-prepend">
-                  <span className="input-group-text">🏠</span>
+                  <span className="input-group-text">🏠︎</span>
               </div>
               <select className="form-select"
-                name='town'
+                name={name}
                 value={value}
                 ref={selectRef}
                 onChange={onChange}
                 required
               >
-                <option value="" >Odaberi grad</option>
+                <option value="" >{name}</option>
                 {town.map(town => (
                   <option key={town.id} value={town.name}>
                     {town.name}
@@ -41,5 +43,4 @@ function TownSelect({value, onChange, autoFocus}){
       </div>);
 }
 
-
-export default TownSelect;
+export default Select;

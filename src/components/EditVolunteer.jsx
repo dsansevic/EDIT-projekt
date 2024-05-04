@@ -1,4 +1,4 @@
-import TownSelect from "../inputs/TownSelect"
+import Select from "../inputs/Select"
 import axios from "axios";
 import { useState} from "react";
 
@@ -24,7 +24,7 @@ function EditVolunteer({volunteer, setVolunteers, setEditModeOn, updateAll}){
     
     return(
         <>
-        <TownSelect value={formData.town} onChange={inputChange} autoFocus={true}/>
+        <Select value={formData.town} onChange={inputChange} url="address" name="town" autoFocus={true}/>
         <input type="text" value={formData.association} name= "association" onChange={inputChange} ></input>
         <input type="text" value={formData.contact_number} name= "contact_number" onChange={inputChange} ></input>
         <button onClick={handleSave}>Save</button>

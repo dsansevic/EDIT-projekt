@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
-import TownSelect from '../../inputs/TownSelect';
+import { Select } from '../../inputs';
 import axios from 'axios';
+
 function FilterVolunteers({ volunteers, setFilteredVolunteers }) {
     const [filterTown, setFilterTown] = useState('');
     const [filterJob, setFilterJob] = useState('');
@@ -56,7 +57,7 @@ function FilterVolunteers({ volunteers, setFilteredVolunteers }) {
 
     return (
         <div>
-             <TownSelect value={filterTown.town} onChange={handleTownChange}/>
+             <Select value={filterTown.town} url="address" name="town" onChange={handleTownChange}/>
              <select className="form-select"
                 name='job'
                 value={filterJob}

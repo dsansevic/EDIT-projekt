@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import axios from "axios";
-import { InputWithIcon, TownSelect } from "../../inputs";
+import { InputWithIcon, Select } from "../../inputs";
 import { faHandHoldingHeart, faMapLocationDot} from "../../icons/iconImports"
 
 import "./Associations.css";
@@ -57,7 +57,7 @@ function AddNewAssociation({ action }) {
                     <form onSubmit={handleFormSubmit}>
                         <InputWithIcon name="name" value={formData.name} icon ={faHandHoldingHeart} inputChange={inputChange}/>
                         <InputWithIcon name="address" value={formData.address} icon={faMapLocationDot} inputChange={inputChange}/>
-                        <TownSelect value={formData.town} onChange={inputChange}/>
+                        <Select value={formData.town} url="address" name="town" onChange={inputChange}/>
                         <button type='submit' className="btn btn-light btn-md">Pošalji</button>
                     </form>
                 </div>
