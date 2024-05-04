@@ -5,6 +5,8 @@ import VolunteerCommentAndRating from "./VolunteerRatings";
 import Delete from "./Delete";
 import AssociationsTable from "./AssociationsTable";
 import PendingAssociationTable from "./PendingAssociationTable";
+import ActivityCard from "./ActivityCard";
+import DetailedActivityCard from "./DetailedActivityCard";
 
 export {
     Navbar,
@@ -13,5 +15,7 @@ export {
     VolunteerCommentAndRating,
     Delete,
     AssociationsTable,
-    PendingAssociationTable
+    PendingAssociationTable,
+    DetailedActivityCard,
+    ActivityCard
 };

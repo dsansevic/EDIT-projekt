@@ -29,6 +29,7 @@ function Volunteers() {
                             <div className="row">
                                 {filteredVolunteers.map((volunteer) => (
                                     <VolunteerCard key={volunteer.id} volunteer={volunteer} setVolunteers={setFilteredVolunteers} updateAll={setVolunteers} />
+
                                 ))}
                             </div>
                         </div>
@@ -45,6 +46,7 @@ function Volunteers() {
                         <FilterVolunteers volunteers={volunteers} setFilteredVolunteers={setFilteredVolunteers}/>
                         <div className="row">
                             {filteredVolunteers.map((volunteer) => (
+                                
                                 <VolunteerCard key={volunteer.id} volunteer={volunteer} setVolunteers={setFilteredVolunteers} updateAll={setVolunteers} />
                             ))}
                         </div>

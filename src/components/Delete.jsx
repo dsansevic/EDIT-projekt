@@ -8,6 +8,7 @@ function Delete({id, update, updateAll, url})
     async function deleteById() {
         await axios.delete(`http://localhost:3001/${url}/${id}`);   
         const rez = await axios.get(`http://localhost:3001/${url}`);
+        setDeleteState(false);
         update(rez.data);
         updateAll(rez.data);
     }

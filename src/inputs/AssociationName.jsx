@@ -1,7 +1,7 @@
 import { faHandHoldingHeart, FontAwesomeIcon } from "../icons/iconImports"
 import { useRef, useEffect } from "react";
 
-function AssociationName({ value, inputChange }) {
+function AssociationName({ name, value, inputChange }) {
     const inputRef = useRef(null);
 
     useEffect(() => {
@@ -17,8 +17,8 @@ function AssociationName({ value, inputChange }) {
             <input
                 type="text"
                 className="form-control"
-                name="name"
-                placeholder="naziv udruge"
+                name={name}
+                placeholder={name}
                 value={value}
                 onChange={inputChange}
                 ref={inputRef}

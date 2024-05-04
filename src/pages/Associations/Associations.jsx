@@ -18,11 +18,14 @@ function Associations() {
     }, []);
 
     return (
-        <>
+        <div className='container'>
+            <p className="prviRed">Popis svih</p>
+            <h1>udruga</h1>
+            <p className="treciRed">koje djeluju u našoj županiji</p>
             <AddNewAssociation action={setAssociationsPendingApproval} />
             <AssociationsTable associations={associations} setAssociations={setAssociations} />
             {admin && <PendingAssociationTable associations={associations} setAssociations={setAssociations} />}
-        </>
+        </div>
     );
 }
 

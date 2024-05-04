@@ -2,6 +2,7 @@ import { useState} from "react";
 import {TownSelect, JobSelect, NameInput} from "../../inputs"
 import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
+// import prepareDataForSending from "../../PrepareDataForSending";
 import axios from "axios";
 
 function AddNewVolunteer({setVolunteers, updateAll}) {
@@ -93,8 +94,10 @@ function AddNewVolunteer({setVolunteers, updateAll}) {
             <div className="card-body">
                 <form onSubmit={sendData}>
                     <h2 className="addNewTitle">Novi korisnik</h2>
+                    {/* <NameInput value={formData.name} button = {false} handlePosalji={(value) => setFormData({ ...formData, name: value })} /> */}
+
                     <NameInput value={formData.name} onChange={(value) => setFormData({ ...formData, name: value })} />
-                    <TownSelect value={formData.town} onChange={inputChange}/>
+                    <TownSelect value={formData.town} onChange={inputChange} autoFocus={false}/>
                     <PhoneInput country={'hr'} name = "contact_number" value={formData.contact_number} onChange={handleContactChange} inputProps={{required:true}}></PhoneInput>
                     <JobSelect onChange={handleJobChange} />
 

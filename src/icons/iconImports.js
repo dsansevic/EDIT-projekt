@@ -8,7 +8,8 @@ import {
     faPenToSquare, 
     faMapLocationDot, 
     faHandHoldingHeart, 
-    faPhone 
+    faPhone,
+    faSpinner 
 } from '@fortawesome/free-solid-svg-icons';
 
 export { 
@@ -20,5 +21,6 @@ export {
     faTrashCan, 
     faPenToSquare, 
     faHandHoldingHeart, 
-    faPhone 
+    faPhone,
+    faSpinner
 };

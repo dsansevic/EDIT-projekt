@@ -36,7 +36,10 @@ function VolunteerCard({ volunteer, setVolunteers, updateAll }) {
             />  
           </div>
           <h5 className="card-title">{volunteer.name}</h5>
-          <i>{volunteer.jobs.map(job => job).join(", ")}</i>
+
+          {/* zašto odjednom ne radii??? */}
+          {/* <i>{volunteer.jobs.map(job => job).join(", ")}</i> */}
+          
           <div className="p-3">
             
             {(editModeOn && admin) ? (
@@ -81,9 +84,9 @@ function VolunteerCard({ volunteer, setVolunteers, updateAll }) {
               <h5 className="offcanvas-title">{volunteer.name}</h5>
               <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-          <div className="offcanvas-body">          
+          {/* <div className="offcanvas-body">          
             <VolunteerCommentAndRating comments={volunteer.comments} averageGrade={volunteer.average_grade} grade_count = {volunteer.grade_count} />
-          </div>
+          </div> */}
         </div>
     </div>
   );

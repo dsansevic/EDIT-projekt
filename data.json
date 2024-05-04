@@ -4,17 +4,106 @@
       "id": "per1",
       "name": "Daj 5 za Perle",
       "date": "04.09.2024",
+      "address": "Trg sv. Stjepana",
+      "town": "Hvar",
       "association": " Udruga Perle",
       "info": "Cilj je pomoći našoj djeci osigurati dostatna sredstva za godišnje terapije na otoku. Utrka se sastoji od plivačke dionice u dužini od 12 km, biciklističke dionice u dužini od 100km te 22km trkačke dionice.",
-      "broj_prijava": 0
+      "volunteers": [
+        {
+          "id": "e1dca609-276d-48c6-b315-0ce907e56743",
+          "name": "Ivana Kovačić"
+        },
+        {
+          "id": "49739d98-0f4c-486b-8d24-4d6dfb64bb9c",
+          "name": "Margita Carić"
+        },
+        {
+          "id": "171efd83-e1ef-4752-bb64-cd4a1e08afb3",
+          "name": "Doris Ćurin"
+        }
+      ]
     },
     {
       "id": "post",
       "name": "POST – Podrška mladima iz alternativne skrbi",
       "date": "01.01.2022",
       "association": "Udruga MoSt",
+      "address": "Riva 17",
+      "town": "Split",
       "info": "Projekt je usmjeren na prevenciju socijalne isključenosti mladih iz alternativne skrbi, organizacijom stručne i mentorske podrške te podrške u obrazovanju i jačanju profesionalnih kompetencija.",
-      "broj_prijava": 0
+      "volunteers": [
+        {
+          "id": "f225d519-a9db-4e92-8f22-2faa46b02cba",
+          "name": "maja mirtović"
+        },
+        {
+          "id": "2e04a6a4-2038-4041-ae51-0300ca063a8c",
+          "name": "Ivona Petrić"
+        },
+        {
+          "id": "218ced9a-33b7-4cf2-8161-20738ff2a76e",
+          "name": "Pia Jukica"
+        },
+        {
+          "id": "5e1b64b7-778f-473b-ae6c-a4f7c4a8a256",
+          "name": "Anela Mrkonjić"
+        },
+        {
+          "id": "f44058da-024d-4db9-8ae2-33e8e3f58017",
+          "name": "Monika Majić"
+        },
+        {
+          "id": "2b939f9a-6d1c-4fa0-9cc5-52cfbd3d7d64",
+          "name": "Monika Majić"
+        },
+        {
+          "id": "e3a808c1-5093-47f1-8f21-202375ac4f47",
+          "name": "Andrea Miljak"
+        },
+        {
+          "id": "54eab5cf-01c6-4b08-bb16-f9bc1c9654d1",
+          "name": "Petra Svilović"
+        }
+      ]
+    },
+    {
+      "id": "34bc",
+      "name": "dnsd",
+      "date": "2024-05-22",
+      "address": "fsdfs",
+      "town": "Lovreć",
+      "info": "fjfjfjf",
+      "volunteers": []
+    },
+    {
+      "id": "cd86",
+      "name": "nova soba",
+      "date": "2024-05-23",
+      "address": " dubrovačka 2",
+      "town": "Lokvičići",
+      "association": "udrua zvijezda",
+      "info": "najbolje ikad",
+      "volunteers": [
+        {
+          "id": "a970c271-dee1-4dd4-9f5f-fa954bcef3f3",
+          "name": "ej"
+        }
+      ]
+    },
+    {
+      "id": "4863",
+      "name": "d",
+      "date": "2024-05-30",
+      "address": "d",
+      "town": "Lećevica",
+      "association": "Udruga Rijeka",
+      "info": "dsd",
+      "volunteers": [
+        {
+          "id": "ca278b80-4c4b-48ce-8dfe-8dd8cff10278",
+          "name": "njd sds"
+        }
+      ]
     }
   ],
   "volunteers": [
@@ -52,7 +141,7 @@
     {
       "id": "a44g",
       "name": "Petra Sarić",
-      "town": "Makarska",
+      "town": "Lećevica",
       "association": "Udruga Zvijezda",
       "contact_number": "385998574877",
       "jobs": [
@@ -184,8 +273,8 @@
       "name": "TONI s",
       "town": "Dugopolje",
       "image": "",
-      "association": "",
-      "contact_number": "385458684686",
+      "association": "d",
+      "contact_number": "385458684689",
       "jobs": [
         "Razno"
       ],
@@ -199,11 +288,46 @@
     {
       "id": "1ade",
       "name": "Marija Ivanković",
-      "town": "Lovreć",
+      "town": "Kaštela",
       "image": "",
-      "association": "Udruga Rijeka",
+      "association": "Udruga Krug",
       "contact_number": "38558484848",
       "jobs": [
+        "Prijevoz"
+      ],
+      "grades": [],
+      "average_grade": "",
+      "grade_count": "",
+      "comments": [
+        {}
+      ]
+    },
+    {
+      "id": "8288",
+      "name": "iva maric",
+      "town": "Dugi Rat",
+      "image": "",
+      "association": "",
+      "contact_number": "3856468468",
+      "jobs": [
+        "Organizacija događaja"
+      ],
+      "grades": [],
+      "average_grade": "",
+      "grade_count": "",
+      "comments": [
+        {}
+      ]
+    },
+    {
+      "id": "fe03",
+      "name": "Pia Jukica",
+      "town": "Cista Provo",
+      "image": "",
+      "association": "",
+      "contact_number": "3856486468",
+      "jobs": [
+        "Organizacija događaja",
         "Prijevoz"
       ],
       "grades": [],
@@ -240,12 +364,6 @@
       "town": "Stari Grad"
     },
     {
-      "id": "999v",
-      "name": "Udruga Perle",
-      "address": "Riva 33, 21460",
-      "town": "Stari Grad"
-    },
-    {
       "id": "12dk",
       "name": "Udruga Sunce",
       "address": "Vukovarska 33, 21300",
@@ -264,42 +382,30 @@
       "town": "Dugopolje"
     },
     {
-      "id": "385f",
-      "name": "Udruga Split",
-      "town": "Split",
-      "address": "Vinkovačka 12"
-    },
-    {
-      "id": "c326",
-      "name": "D S",
-      "town": "Cista Provo",
-      "address": "dscsd"
-    },
-    {
       "id": "7a97",
       "name": "Udruga Vis",
       "town": "Cista Provo",
       "address": "Vis 908"
     },
     {
-      "id": "13e3",
-      "name": "fdfd",
-      "town": "Cista Provo",
-      "address": "dscsd"
-    },
-    {
       "id": "cd91",
       "name": "Udruga Split",
       "town": "Split",
       "address": "Vinkovačka 12"
+    },
+    {
+      "id": "3b89",
+      "name": "Udruga Srce",
+      "town": "Dugopolje",
+      "address": "Kala 8"
     }
   ],
   "pending_associations": [
     {
-      "id": "fedd",
-      "name": "sora sansevifv fvfv",
-      "town": "Dicmo",
-      "address": "asd"
+      "id": "7592",
+      "name": "Udruga Život",
+      "town": "Klis",
+      "address": "Metković 8"
     }
   ],
   "address": [

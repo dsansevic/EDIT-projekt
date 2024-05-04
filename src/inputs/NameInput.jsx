@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 
-function NameInput({ value, onChange }) {
+function NameInput({ value, onChange, button, handlePosalji }) {
     const [nameValidation, setNameValidation] = useState("");
     const selectRef = useRef(null);
 
@@ -17,7 +17,7 @@ function NameInput({ value, onChange }) {
             selectRef.current.focus();
         }
     }, []);
-    const inputChange = (e) => {
+    const inputChange = (e) => { // nepotreno 
         const { value } = e.target;
         onChange(value);
     };
@@ -45,6 +45,7 @@ function NameInput({ value, onChange }) {
                     onChange={inputChange}
                     ref={selectRef}
                 />
+            {button && <button className="btn btn-secondary" onClick={handlePosalji}>Pošalji</button>}
             </div>
             {nameValidation && <div className="error-message"><p style={{ color: 'red', textAlign:'center' }}>{nameValidation}</p></div>}
         </div>

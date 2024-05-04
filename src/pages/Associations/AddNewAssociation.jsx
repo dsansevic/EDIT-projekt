@@ -53,7 +53,7 @@ function AddNewAssociation({ action }) {
             {addMode ? (
                 <div className="container">
                     <form onSubmit={handleFormSubmit}>
-                        <AssociationName value={formData.name} inputChange={inputChange}/>
+                        <AssociationName name="name" value={formData.name} inputChange={inputChange}/>
                         <TownSelect value={formData.town} onChange={inputChange}/>
                         <AssociationAddress value={formData.address} inputChange={inputChange}/>
                         <button type='submit' className="btn btn-light btn-md">Pošalji</button>
