@@ -23,7 +23,7 @@ function Select({value, name, onChange, autoFocus, url}){
       <div className="form-group mb-3">
           <div className="input-group">
               <div className="input-group-prepend">
-                  <span className="input-group-text">🏠︎</span>
+                  <span className="input-group-text">{name === "town" ? "🏠︎" : "💼"}</span>
               </div>
               <select className="form-select"
                 name={name}
