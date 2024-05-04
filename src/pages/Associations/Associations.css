@@ -1,0 +1,17 @@
+/* ----------------------AddNewAssociation.jsx ------------------------- */
+
+/* styling modal */
+.modal-header {
+    color: rgb(152, 103, 12);
+    background-color: #add8e6;
+}
+.modal-body {
+    color: black;
+}
+.modal-footer .btn-secondary {
+    background-color: rgb(152, 103, 12);
+    border: none;
+}
+.modal-footer .btn-secondary:hover {
+    background-color: rgb(122, 60, 10)
+}

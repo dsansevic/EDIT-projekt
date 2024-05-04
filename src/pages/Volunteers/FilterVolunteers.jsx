@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import TownSelect from './inputs/TownSelect';
+import TownSelect from '../../inputs/TownSelect';
 import axios from 'axios';
 function FilterVolunteers({ volunteers, setFilteredVolunteers }) {
     const [filterTown, setFilterTown] = useState('');

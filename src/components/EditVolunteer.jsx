@@ -1,9 +1,10 @@
-import TownSelect from "../pages/Volunteers/inputs/TownSelect"
+import TownSelect from "../inputs/TownSelect"
 import axios from "axios";
-import { useState } from "react";
+import { useState} from "react";
 
 function EditVolunteer({volunteer, setVolunteers, setEditModeOn, updateAll}){
     const [formData, setFormData] = useState(volunteer); // za pohranu privremenih promjena
+
     function inputChange(event) {
         const { name, value } = event.target;      
         setFormData({ ...formData, [name]: value });
@@ -23,7 +24,7 @@ function EditVolunteer({volunteer, setVolunteers, setEditModeOn, updateAll}){
     
     return(
         <>
-        <TownSelect value={formData.town} onChange={inputChange} />
+        <TownSelect value={formData.town} onChange={inputChange} autoFocus={true}/>
         <input type="text" value={formData.association} name= "association" onChange={inputChange} ></input>
         <input type="text" value={formData.contact_number} name= "contact_number" onChange={inputChange} ></input>
         <button onClick={handleSave}>Save</button>

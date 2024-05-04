@@ -1,8 +1,9 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
-function TownSelect({value, onChange}){
+function TownSelect({value, onChange, autoFocus}){
     const [town, setTown] = useState([]);
+    const selectRef = useRef(null);
 
     useEffect(() => {
         axios.get("http://localhost:3001/address")
@@ -10,8 +11,14 @@ function TownSelect({value, onChange}){
           .catch(err => console.error(err.message));
       }, []);
   
+    useEffect(() => {
+      if (autoFocus &&selectRef.current) {
+        selectRef.current.focus();
+    }
+  }, [autoFocus]);
+
     return (
-      <div className="form-group">
+      <div className="form-group mb-3">
           <div className="input-group">
               <div className="input-group-prepend">
                   <span className="input-group-text">🏠</span>
@@ -19,6 +26,7 @@ function TownSelect({value, onChange}){
               <select className="form-select"
                 name='town'
                 value={value}
+                ref={selectRef}
                 onChange={onChange}
                 required
               >

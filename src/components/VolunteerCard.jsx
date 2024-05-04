@@ -2,7 +2,7 @@ import { useState, useEffect, useContext } from "react";
 import { AdminContext } from "../contexts/AdminContext";
 // import { Offcanvas } from 'bootstrap';
 import { FontAwesomeIcon, faHouseChimney, faTrashCan, faPenToSquare, faHandHoldingHeart, faPhone } from '../icons/iconImports';
-import {DeleteVolunteer, EditVolunteer, VolunteerCommentAndRating } from "./"
+import {Delete, EditVolunteer, VolunteerCommentAndRating } from "./"
 
 function VolunteerCard({ volunteer, setVolunteers, updateAll }) {
 
@@ -64,7 +64,7 @@ function VolunteerCard({ volunteer, setVolunteers, updateAll }) {
           
               {admin && (
                 <div className="ikonice">
-                  <DeleteVolunteer id={volunteer.id} setVolunteers= {setVolunteers} updateAll={updateAll}></DeleteVolunteer>
+                  <Delete id={volunteer.id} url="volunteers" update={setVolunteers} updateAll={updateAll}></Delete>
                   <FontAwesomeIcon icon={faPenToSquare} onClick={() => setEditModeOn(true)} />
                 </div>
               )}
@@ -72,19 +72,19 @@ function VolunteerCard({ volunteer, setVolunteers, updateAll }) {
             )}
           </div>
 
-          {/* ovo maknit ako ne napravin do kraja !!!!!   */}
+          {/* ovo maknit ako ne napravin do kraja !!!!!   ILI STAVIT KO MODAL!! */}
           <button type="button" className="btn btn-light mt-auto" data-bs-toggle="offcanvas" data-bs-target={`#offcanvas-${volunteer.id}`}>Ocijeni</button>
+          </div>
+          </div>
+          <div className="offcanvas offcanvas-start" tabIndex="-1" id={`offcanvas-${volunteer.id}`}>
+            <div className="offcanvas-header">
+              <h5 className="offcanvas-title">{volunteer.name}</h5>
+              <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+          <div className="offcanvas-body">          
+            <VolunteerCommentAndRating comments={volunteer.comments} averageGrade={volunteer.average_grade} grade_count = {volunteer.grade_count} />
+          </div>
         </div>
-      </div>
-      <div className="offcanvas offcanvas-start" tabIndex="-1" id={`offcanvas-${volunteer.id}`}>
-        <div className="offcanvas-header">
-          <h5 className="offcanvas-title">{volunteer.name}</h5>
-          <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div className="offcanvas-body">          
-        <VolunteerCommentAndRating comments={volunteer.comments} averageGrade={volunteer.average_grade} grade_count = {volunteer.grade_count} />
-        </div>
-      </div>
     </div>
   );
 }

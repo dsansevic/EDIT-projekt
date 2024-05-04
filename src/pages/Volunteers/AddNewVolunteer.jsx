@@ -1,5 +1,5 @@
 import { useState} from "react";
-import {TownSelect, JobSelect, NameInput} from "./inputs"
+import {TownSelect, JobSelect, NameInput} from "../../inputs"
 import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
 import axios from "axios";

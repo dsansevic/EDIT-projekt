@@ -1,5 +1,24 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';  
-import { faHouseChimney, faTrashCan, faPenToSquare, faHandHoldingHeart, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { 
+    faHouseChimney,
+    faCheck, 
+    faLocationDot, 
+    faTrashCan, 
+    faPenToSquare, 
+    faMapLocationDot, 
+    faHandHoldingHeart, 
+    faPhone 
+} from '@fortawesome/free-solid-svg-icons';
 
-export { FontAwesomeIcon, faHouseChimney, faTrashCan, faPenToSquare, faHandHoldingHeart, faPhone };
+export { 
+    FontAwesomeIcon,
+    faCheck, 
+    faLocationDot, 
+    faMapLocationDot, 
+    faHouseChimney, 
+    faTrashCan, 
+    faPenToSquare, 
+    faHandHoldingHeart, 
+    faPhone 
+};

@@ -152,5 +152,5 @@ p {
 }
 /* to hide Odaberi grad */
 .form-select:focus option[value=""] {
-    display: none;
+    display: none; 
 }

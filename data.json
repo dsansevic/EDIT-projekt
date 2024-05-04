@@ -111,22 +111,6 @@
       "comments": []
     },
     {
-      "id": "c261",
-      "name": "d a",
-      "town": "Baška Voda",
-      "image": "",
-      "association": "",
-      "contact_number": "3852343423",
-      "jobs": [
-        "Prijevoz",
-        "Edukacija"
-      ],
-      "grades": [],
-      "average_grade": "",
-      "grade_count": "",
-      "comments": []
-    },
-    {
       "id": "b29d",
       "name": "lea larić",
       "town": "Trogir",
@@ -164,7 +148,7 @@
     {
       "id": "e5b9",
       "name": "Paula Peronja",
-      "town": "Split",
+      "town": "Jelsa",
       "image": "",
       "association": "Udruga Zvijezda",
       "contact_number": "385768757",
@@ -194,30 +178,128 @@
       "comments": [
         {}
       ]
+    },
+    {
+      "id": "f2d4",
+      "name": "TONI s",
+      "town": "Dugopolje",
+      "image": "",
+      "association": "",
+      "contact_number": "385458684686",
+      "jobs": [
+        "Razno"
+      ],
+      "grades": [],
+      "average_grade": "",
+      "grade_count": "",
+      "comments": [
+        {}
+      ]
+    },
+    {
+      "id": "1ade",
+      "name": "Marija Ivanković",
+      "town": "Lovreć",
+      "image": "",
+      "association": "Udruga Rijeka",
+      "contact_number": "38558484848",
+      "jobs": [
+        "Prijevoz"
+      ],
+      "grades": [],
+      "average_grade": "",
+      "grade_count": "",
+      "comments": [
+        {}
+      ]
     }
   ],
   "associations": [
     {
       "id": "78gv",
       "name": "Udruga Perle",
-      "info": "Udruga djece i mladih s najtežim tjelesnim invaliditetom i djece s posebnim potrebama, roditelja skrbnika i volontera Perle” osnovana je s ciljem postizanja i razvoja djece i mladih, rada s djecom s poteškoćama u razvoju te poticanja harmoničnog razvoja djece i mladih.",
-      "activities": [
-        "per1"
-      ]
+      "address": "Riva 33, 21460",
+      "town": "Stari Grad"
     },
     {
       "id": "nsd8",
       "name": "Udruga Mi",
-      "info": "Udruga MI- Split od svog osnutka 1997. provodi programe potpore građanima i razvoja zajednice poticanjem suradnje, solidarnosti i uključivanja građana, u cilju uspostavljanja društene kohezije",
-      "activities": []
+      "address": "Sinjska ul. 7, 21000",
+      "town": "Split"
     },
     {
       "id": "mos2",
       "name": "Udruga MoSt",
-      "info": "Udruga MoSt je nevladina organizacija sa sjedištem u Splitu, s lokalnim, regionalnim i nacionalnim djelovanjem koja na vrijednostima volonterskog rada, humanosti, solidarnosti, poštivanju različitosti i ljudskih prava pruža konkretnu pomoć potrebitima i podiže kvalitetu života djece, mladih i građana drugih dobnih kategorija.",
-      "activities": [
-        "post"
-      ]
+      "address": "Ul. Ivana Gundulića 52, 21000",
+      "town": "Split"
+    },
+    {
+      "id": "727v",
+      "name": "Udruga Lara",
+      "address": "Riva 20, 21460",
+      "town": "Stari Grad"
+    },
+    {
+      "id": "999v",
+      "name": "Udruga Perle",
+      "address": "Riva 33, 21460",
+      "town": "Stari Grad"
+    },
+    {
+      "id": "12dk",
+      "name": "Udruga Sunce",
+      "address": "Vukovarska 33, 21300",
+      "town": "Makarska"
+    },
+    {
+      "id": "12dk",
+      "name": "Udruga More",
+      "address": "Petra Hektorovića 10, 21450",
+      "town": "Hvar"
+    },
+    {
+      "id": "12dk",
+      "name": "Udruga Mir",
+      "address": "Šimićeva 7, 21204",
+      "town": "Dugopolje"
+    },
+    {
+      "id": "385f",
+      "name": "Udruga Split",
+      "town": "Split",
+      "address": "Vinkovačka 12"
+    },
+    {
+      "id": "c326",
+      "name": "D S",
+      "town": "Cista Provo",
+      "address": "dscsd"
+    },
+    {
+      "id": "7a97",
+      "name": "Udruga Vis",
+      "town": "Cista Provo",
+      "address": "Vis 908"
+    },
+    {
+      "id": "13e3",
+      "name": "fdfd",
+      "town": "Cista Provo",
+      "address": "dscsd"
+    },
+    {
+      "id": "cd91",
+      "name": "Udruga Split",
+      "town": "Split",
+      "address": "Vinkovačka 12"
+    }
+  ],
+  "pending_associations": [
+    {
+      "id": "fedd",
+      "name": "sora sansevifv fvfv",
+      "town": "Dicmo",
+      "address": "asd"
     }
   ],
   "address": [
