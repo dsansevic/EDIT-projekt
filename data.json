@@ -67,107 +67,68 @@
       ]
     },
     {
-      "id": "34bc",
-      "name": "dnsd",
-      "date": "2024-05-22",
-      "address": "fsdfs",
-      "town": "Lovreć",
-      "info": "fjfjfjf",
-      "volunteers": []
-    },
-    {
-      "id": "cd86",
-      "name": "nova soba",
-      "date": "2024-05-23",
-      "address": " dubrovačka 2",
-      "town": "Lokvičići",
-      "association": "udrua zvijezda",
-      "info": "najbolje ikad",
-      "volunteers": [
-        {
-          "id": "a970c271-dee1-4dd4-9f5f-fa954bcef3f3",
-          "name": "ej"
-        }
-      ]
-    },
-    {
-      "id": "4863",
-      "name": "d",
-      "date": "2024-05-30",
-      "address": "d",
-      "town": "Lećevica",
-      "association": "Udruga Rijeka",
-      "info": "dsd",
-      "volunteers": [
-        {
-          "id": "ca278b80-4c4b-48ce-8dfe-8dd8cff10278",
-          "name": "njd sds"
-        }
-      ]
-    },
-    {
-      "id": "7eaf",
-      "name": "iva",
-      "date": "2024-05-15",
-      "address": "ulica bozje pravde",
+      "id": "26b0",
+      "name": "Čišćenje plaže \"Zeleni raj\"",
+      "date": "2024-05-25",
+      "address": "Zeneli raj 8",
       "town": "Komiža",
-      "association": "Udruga Zvijezda",
-      "info": "odlicna aktivnost",
+      "association": "Udruga Mi",
+      "info": "Pridružite nam se u subotu u 9 sati ujutro na čišćenju plaže \"Zeleni raj\". Pokažimo zajedničku brigu za našu obalu i očuvajmo je za buduće generacije. Oprema će biti osigurana, a nakon volonterskog rada slijedi zajednički piknik i druženje.",
+      "volunteers": []
+    },
+    {
+      "id": "b521",
+      "name": "Podjela obroka beskućnicima:",
+      "date": "2024-05-31",
+      "address": "Nova riva 9",
+      "town": "Trogir",
+      "association": "Udruga Perle",
+      "info": "U srijedu navečer organiziramo podjelu obroka beskućnicima u centru grada. Pridružite nam se u pripremi toplih obroka i pružimo podršku onima koji su u potrebi. Svaka ruka pomaže, a osmijeh na licima onih kojima pomažemo neprocjenjiv je.",
+      "volunteers": []
+    },
+    {
+      "id": "e43c",
+      "name": "Uređenje dječjeg vrtića",
+      "date": "2024-05-17",
+      "address": "Petra Hektorovića 19",
+      "town": "Dicmo",
+      "association": "Udruga MoSt",
+      "info": "Volonteri su srce naše zajednice, a u petak ćemo zajedničkim snagama uljepšati dječji vrtić \"Vesela igraonica\". Bojanje zidova, uređenje dvorišta i oslikavanje dječjih igračaka samo su neki od poslova koji nas čekaju. Dođite i učinimo naš vrtić još ljepšim mjestom za naše najmlađe.",
+      "volunteers": []
+    },
+    {
+      "id": "7cc1",
+      "name": "Radionica o zaštiti okoliša",
+      "date": "2024-05-30",
+      "address": "Dom 4",
+      "town": "Dicmo",
+      "association": "Udruga Mi",
+      "info": "Pozivamo sve zainteresirane na našu radionicu o zaštiti okoliša koja će se održati u četvrtak u 17 sati. Kroz interaktivne aktivnosti i predavanja, naučit ćemo kako možemo smanjiti svoj ekološki otisak i pridonijeti očuvanju prirode. Dođite, naučite i budimo promjena koju želimo vidjeti u svijetu!",
+      "volunteers": []
+    },
+    {
+      "id": "2200",
+      "name": "Obilazak staračkog doma",
+      "date": "2024-05-23",
+      "address": "Visoka 30",
+      "town": "Split",
+      "association": "Udruga Lara",
+      "info": "U ponedjeljak ujutro organiziramo posjet staračkom domu \"Sunčano srce\". Pridružite nam se u pružanju podrške našim starijim sugrađanima, razgovarajmo s njima, podijelimo osmijeh i pokažimo koliko nam znače. Vaša prisutnost može uljepšati dan nekome tko je sam.",
       "volunteers": [
         {
-          "id": "cb2ab6fb-05c1-47c3-a21d-7ca9bce69c5f",
-          "name": "ivana kovač"
+          "id": "6a516b36-8465-4b82-a265-a3e19e718ede",
+          "name": "Ivana Petrić"
         }
       ]
     },
     {
-      "id": "ddb1",
-      "name": "Pjevanje",
-      "date": "2024-05-15",
-      "address": "doma 231",
+      "id": "1f20",
+      "name": "Sadnja stabala u parku",
+      "date": "2024-05-11",
+      "address": "Dubrovačka 10",
       "town": "Lećevica",
-      "association": "ffff",
-      "info": "jdjdj222",
-      "volunteers": []
-    },
-    {
-      "id": "169f",
-      "name": "Daruj život",
-      "date": "",
-      "address": "Ulica Petra Hektorovića 47",
-      "town": "Lećevica",
-      "association": "Udruga Uni",
-      "info": "najbolje ikad",
-      "volunteers": []
-    },
-    {
-      "id": "74e9",
-      "name": "D S",
-      "date": "2024-06-01",
-      "address": "aSSaaA",
-      "town": "town",
-      "association": "association",
-      "info": "Top",
-      "volunteers": []
-    },
-    {
-      "id": "f484",
-      "name": "Vrt",
-      "date": "2024-05-14",
-      "address": "Ulica Petra Hektorovića 47, 29443012",
-      "town": "town",
-      "association": "association",
-      "info": "nikad bolje",
-      "volunteers": []
-    },
-    {
-      "id": "f702",
-      "name": "Čišćenje plaže",
-      "date": "2024-06-09",
-      "address": "dol 23",
-      "town": "Dugi Rat",
-      "association": "Udruga Lara",
-      "info": "ajmo svi",
+      "association": "Udruga Sunce",
+      "info": "Ovog vikenda pozivamo sve ljubitelje prirode i okoliša da nam se pridruže u akciji sadnje stabala u gradskom parku. Cilj nam je obnoviti zeleni pojas parka i pridonijeti stvaranju zdravijeg okoliša za našu zajednicu. Ponesite rukavice, grablje i dobru volju, a mi ćemo osigurati sadnice i alat. Dođite i zajedno učinimo naš grad još zelenijim i ljepšim mjestom za život.",
       "volunteers": []
     }
   ],
@@ -218,7 +179,7 @@
       "name": "Nevena Pehar",
       "town": "Jelsa",
       "image": "https://xsgames.co/randomusers/avatar.php?g=female&id=7",
-      "association": "",
+      "association": "Udruga Loki",
       "contact_number": "38588894989",
       "jobs": [
         "Čišćenje"
@@ -227,32 +188,17 @@
         4,
         4,
         3,
-        5
+        5,
+        4
       ],
-      "grade_count": 4
-    },
-    {
-      "id": "0fd1",
-      "name": "Borna Goreta",
-      "town": "Split",
-      "image": "https://xsgames.co/randomusers/avatar.php?g=male&id=10",
-      "association": "",
-      "contact_number": "3855565657",
-      "jobs": [
-        "Organizacija događaja"
-      ],
-      "grades": [
-        4,
-        1
-      ],
-      "grade_count": 2
+      "grade_count": 5
     },
     {
       "id": "2d48",
       "name": "Petra Svilović",
       "town": "Baška Voda",
       "image": "https://xsgames.co/randomusers/avatar.php?g=female&id=16",
-      "association": "",
+      "association": "Udruga Sunce",
       "contact_number": "8989898686",
       "jobs": [
         "Ekologija",
@@ -266,16 +212,17 @@
       "name": "Anela Mrkonjić",
       "town": "Imotski",
       "image": "https://xsgames.co/randomusers/avatar.php?g=female&id=43",
-      "association": "",
+      "association": "Udruga Srce",
       "contact_number": "3858684684686",
       "jobs": [
         "Edukacija",
         "Briga o osobama s posebnim potrebama"
       ],
       "grades": [
-        5
+        5,
+        1
       ],
-      "grade_count": 1
+      "grade_count": 2
     },
     {
       "id": "35fc",
@@ -301,86 +248,20 @@
       "jobs": [
         "Razno"
       ],
-      "grades": [],
-      "grade_count": 0
-    },
-    {
-      "id": "6bc4",
-      "name": "da s",
-      "town": "Cista Provo",
-      "image": "https://xsgames.co/randomusers/avatar.php?g=male&id=6",
-      "association": "Udruga Sunce",
-      "contact_number": "38564868468",
-      "jobs": [
-        "Ekologija"
-      ],
-      "grades": [],
-      "grade_count": 0
-    },
-    {
-      "id": "05e8",
-      "name": "554444 f",
-      "town": "Dicmo",
-      "image": "https://xsgames.co/randomusers/avatar.php?g=female&id=26",
-      "association": "Udruga Lara",
-      "contact_number": "8488454545",
-      "jobs": [],
       "grades": [
-        3
+        4
       ],
       "grade_count": 1
     },
     {
-      "id": "2ad1",
-      "name": "dsd sds",
-      "town": "Komiža",
-      "image": "https://xsgames.co/randomusers/avatar.php?g=female&id=56",
-      "association": "Udruga Srce",
-      "contact_number": "385777777777",
-      "jobs": [],
-      "grades": [
-        2
-      ],
-      "grade_count": 1
-    },
-    {
-      "id": "5ca0",
-      "name": "dsd dsd",
-      "town": "Cista Provo",
-      "image": "https://xsgames.co/randomusers/avatar.php?g=female&id=68",
-      "association": "Udruga Lara",
-      "contact_number": "864684684",
-      "jobs": [
-        "Medicinska pomoć"
-      ],
-      "grades": [
-        5
-      ],
-      "grade_count": 1
-    },
-    {
-      "id": "ac99",
-      "name": "ddd sd",
-      "town": "Makarska",
-      "image": "https://xsgames.co/randomusers/avatar.php?g=male&id=51",
-      "association": "Udruga Život",
-      "contact_number": "64868443534",
-      "jobs": [
-        "Ekologija",
-        "Edukacija"
-      ],
-      "grades": [],
-      "grade_count": 0
-    },
-    {
-      "id": "88d7",
-      "name": "k o ",
+      "id": "8cd6",
+      "name": "Marko Kovač",
       "town": "Lokvičići",
-      "image": "https://xsgames.co/randomusers/avatar.php?g=male&id=33",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=male&id=36",
       "association": "Udruga MoSt",
-      "contact_number": "974898496",
+      "contact_number": "385464684686",
       "jobs": [
-        "Medicinska pomoć"
+        "Briga o životinjama"
       ],
       "grades": [],
       "grade_count": 0
@@ -436,12 +317,6 @@
       "address": "Vis 908"
     },
     {
-      "id": "cd91",
-      "name": "Udruga Split",
-      "town": "Split",
-      "address": "Vinkovačka 12"
-    },
-    {
       "id": "3b89",
       "name": "Udruga Srce",
       "town": "Dugopolje",
@@ -452,18 +327,6 @@
       "name": "Udruga Život",
       "town": "Jelsa",
       "address": "Vukovarska 16"
-    },
-    {
-      "id": "0dd1",
-      "name": "Udruga Život",
-      "town": "Split",
-      "address": "Visoka 787"
-    },
-    {
-      "id": "01d9",
-      "name": "Udruga Život",
-      "town": "Hvar",
-      "address": "dscsd"
     }
   ],
   "pending_associations": [
@@ -474,10 +337,10 @@
       "address": "Metković 8"
     },
     {
-      "id": "aed2",
-      "name": "iva",
-      "town": "Lećevica",
-      "address": "asDASD"
+      "id": "7b45",
+      "name": "Udruga Stella",
+      "town": "Split",
+      "address": "Vukovarska 9, 21000"
     }
   ],
   "address": [

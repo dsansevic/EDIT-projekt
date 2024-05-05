@@ -37,8 +37,8 @@ p{
     margin-top: 30px;
     border-radius: 2px !important;
     box-shadow:none;
-    background: linear-gradient(to left, rgb(191, 218, 230), transparent);
-    border:none;
+    background: white;
+    border: 1px solid orange;
     padding: 100px;
     max-width: 400px;
 }
@@ -167,7 +167,7 @@ img {
 }
 
 /* ----------------------------------------StarRating------------------------------------------------- */
-input[type="radio"] {
+.rating input[type="radio"] {
     display: none;
   }
 .stars {

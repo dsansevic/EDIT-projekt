@@ -57,7 +57,7 @@ function StarRating({ volunteer, setVolunteers, volunteers }) {
     };
 
     return (
-        <div>
+        <div className="rating">
             <p>
                 {averageRating !== null ? `Prosječna ocjena: ${averageRating} (${volunteer.grade_count})` : `${volunteer.name} još nema ocijena`}
             </p>
