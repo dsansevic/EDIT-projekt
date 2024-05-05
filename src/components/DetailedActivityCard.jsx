@@ -13,7 +13,8 @@ function DetailedActivityCard({activity, setActivities}){
                 <ol>
                 {activity.volunteers.map((volunteer, index) => (
                     <li key={index}>{volunteer.name} 
-                    <DeleteActivityVolunteer activity={activity} setActivities={setActivities} volunteerId={volunteer.id}/>
+                    {admin && 
+                    <DeleteActivityVolunteer activity={activity} setActivities={setActivities} volunteerId={volunteer.id}/> }
                     </li>
                 ))}
                 </ol>
