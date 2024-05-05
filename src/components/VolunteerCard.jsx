@@ -1,28 +1,12 @@
-import { useState, useEffect, useContext } from "react";
+import { useState, useContext } from "react";
 import { AdminContext } from "../contexts/AdminContext";
 // import { Offcanvas } from 'bootstrap';
 import { FontAwesomeIcon, faHouseChimney, faPenToSquare, faHandHoldingHeart, faPhone } from '../icons/iconImports';
 import {Delete, EditVolunteer, VolunteerCommentAndRating } from "./"
 
 function VolunteerCard({ volunteer, setVolunteers, updateAll }) {
-
-  const [randomImage, setRandomImage] = useState('');
   const {admin} = useContext(AdminContext);
   const [editModeOn, setEditModeOn] = useState(false);
-
-  useEffect(() => {
-    //KAsnije ovo prominit i da se sprema slika u korisnika a ne ovako bezveze
-    async function fetchRandomImage() {
-      try {
-        const response = await fetch('https://source.unsplash.com/random/300x200');
-        const imageUrl = response.url;
-        setRandomImage(imageUrl);
-      } catch (error) {
-        console.error('Error fetching random image:', error);
-      }
-    }    fetchRandomImage();
-  }, []);
-
 
   return (
     <div className={`col-lg-${admin ? "6" : "3"} mt-4`}>
@@ -30,7 +14,7 @@ function VolunteerCard({ volunteer, setVolunteers, updateAll }) {
         <div className="card-body d-flex flex-column p-0">
           <div className="avatarImage mb-3 ">
             <img
-              src={randomImage}
+              src={volunteer.image}
               className="img-fluid w-100 rounded-top"
               alt="Slika volontera"
             />  

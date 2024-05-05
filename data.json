@@ -123,209 +123,14 @@
   ],
   "volunteers": [
     {
-      "id": "hdu8",
-      "name": "Nikola Nikić",
-      "town": "Stari Grad",
-      "image": "",
-      "association": "Udruga Perle",
-      "contact_number": "3858751877",
-      "jobs": [
-        "Organizacija događaja",
-        "Čišćenje"
-      ],
-      "grades": [
-        4,
-        5,
-        3
-      ],
-      "average_grade": 4,
-      "grade_count": 3,
-      "comments": [
-        {
-          "id": 1,
-          "tekst": "Vrlo susretljiv i pouzdan volonter.",
-          "korisnik": "Ana"
-        },
-        {
-          "id": 2,
-          "tekst": "Uvijek spreman pomoći, toplo preporučam!",
-          "korisnik": "Ivan"
-        }
-      ]
-    },
-    {
-      "id": "a44g",
-      "name": "Petra Sarić",
-      "town": "Lećevica",
-      "association": "Udruga Zvijezda",
-      "contact_number": "385998574877",
-      "jobs": [
-        "Prijevoz"
-      ],
-      "grades": [
-        4,
-        5,
-        3
-      ],
-      "average_grade": 4,
-      "grade_count": 3,
-      "image": "",
-      "comments": [
-        {
-          "id": 1,
-          "tekst": "Vrlo predana volonterka, uvijek spremna pomoći!",
-          "korisnik": "Ana"
-        },
-        {
-          "id": 2,
-          "tekst": "Izvrsno se snalazi u stresnim situacijama.",
-          "korisnik": "Ivan"
-        }
-      ]
-    },
-    {
-      "id": "9d30",
-      "name": "Iva Runjić",
-      "town": "Dicmo",
-      "image": "",
-      "association": "",
-      "contact_number": "3856849849",
-      "jobs": [
-        "Organizacija događaja"
-      ],
-      "grades": [],
-      "average_grade": "",
-      "grade_count": "",
-      "comments": []
-    },
-    {
-      "id": "520f",
-      "name": "das sad",
-      "town": "Baška Voda",
-      "image": "",
-      "association": "",
-      "contact_number": "3850980980",
-      "jobs": [
-        "Organizacija događaja",
-        "Ekologija"
-      ],
-      "grades": [],
-      "average_grade": "",
-      "grade_count": "",
-      "comments": []
-    },
-    {
-      "id": "b29d",
-      "name": "lea larić",
-      "town": "Trogir",
-      "image": "C:\\fakepath\\Volunteering-cuate.png",
-      "association": "",
-      "contact_number": "38564868468",
-      "jobs": [
-        "Edukacija",
-        "Medicinska pomoć",
-        "Briga o osobama s posebnim potrebama"
-      ],
-      "grades": [],
-      "average_grade": "",
-      "grade_count": "",
-      "comments": []
-    },
-    {
-      "id": "a5e4",
-      "name": "nevena pehar",
-      "town": "Lokvičići",
-      "image": "",
-      "association": "Udruga Perle",
-      "contact_number": "385932040234",
-      "jobs": [
-        "Briga o životinjama",
-        "Ekologija"
-      ],
-      "grades": [],
-      "average_grade": "",
-      "grade_count": "",
-      "comments": [
-        {}
-      ]
-    },
-    {
-      "id": "e5b9",
+      "id": "e2ea",
       "name": "Paula Peronja",
       "town": "Jelsa",
-      "image": "",
-      "association": "Udruga Zvijezda",
-      "contact_number": "385768757",
-      "jobs": [
-        "Prijevoz"
-      ],
-      "grades": [],
-      "average_grade": "",
-      "grade_count": "",
-      "comments": [
-        {}
-      ]
-    },
-    {
-      "id": "969f",
-      "name": "Petra Svilović",
-      "town": "Split",
-      "image": "",
-      "association": "Udruga Loki",
-      "contact_number": "38564868468",
-      "jobs": [
-        "Briga o životinjama"
-      ],
-      "grades": [],
-      "average_grade": "",
-      "grade_count": "",
-      "comments": [
-        {}
-      ]
-    },
-    {
-      "id": "f2d4",
-      "name": "TONI s",
-      "town": "Dugopolje",
-      "image": "",
-      "association": "d",
-      "contact_number": "385458684689",
-      "jobs": [
-        "Razno"
-      ],
-      "grades": [],
-      "average_grade": "",
-      "grade_count": "",
-      "comments": [
-        {}
-      ]
-    },
-    {
-      "id": "1ade",
-      "name": "Marija Ivanković",
-      "town": "Kaštela",
-      "image": "",
-      "association": "Udruga Krug",
-      "contact_number": "38558484848",
-      "jobs": [
-        "Prijevoz"
-      ],
-      "grades": [],
-      "average_grade": "",
-      "grade_count": "",
-      "comments": [
-        {}
-      ]
-    },
-    {
-      "id": "8288",
-      "name": "iva maric",
-      "town": "Dugi Rat",
-      "image": "",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=female&id=21",
       "association": "",
-      "contact_number": "3856468468",
+      "contact_number": "38588894989",
       "jobs": [
-        "Organizacija događaja"
+        "Prijevoz"
       ],
       "grades": [],
       "average_grade": "",
@@ -335,15 +140,14 @@
       ]
     },
     {
-      "id": "fe03",
+      "id": "9ac8",
       "name": "Pia Jukica",
-      "town": "Cista Provo",
-      "image": "",
+      "town": "Dicmo",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=female&id=63",
       "association": "",
-      "contact_number": "3856486468",
+      "contact_number": "38588894989",
       "jobs": [
-        "Organizacija događaja",
-        "Prijevoz"
+        "Edukacija"
       ],
       "grades": [],
       "average_grade": "",
@@ -353,15 +157,14 @@
       ]
     },
     {
-      "id": "5ad8",
-      "name": "ivana brlic",
-      "town": "Cista Provo",
-      "image": "",
+      "id": "a6cf",
+      "name": "Nevena Pehar",
+      "town": "Jelsa",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=female&id=7",
       "association": "",
-      "contact_number": "38554584584",
+      "contact_number": "38588894989",
       "jobs": [
-        "Organizacija događaja",
-        "Prijevoz"
+        "Čišćenje"
       ],
       "grades": [],
       "average_grade": "",
