@@ -18,6 +18,7 @@ img {
 button{
   border: none;
   outline: none;
+  background-color: transparent;
 }
 
 a {

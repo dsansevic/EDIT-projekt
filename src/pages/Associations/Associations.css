@@ -15,3 +15,19 @@
 .modal-footer .btn-secondary:hover {
     background-color: rgb(122, 60, 10)
 }
+
+/* ----------------------AssociationTable.jsx ------------------------- */
+
+  .table-striped>tbody>tr:nth-child(odd)>td, 
+.table-striped>tbody>tr:nth-child(odd)>th {
+   background-color: rgb(218, 254, 219); 
+ }
+
+ .table-striped>tbody>tr:nth-child(even)>td, 
+ .table-striped>tbody>tr:nth-child(even)>th {
+    background-color: rgb(205, 252, 255);
+  }
+
+tr {
+    height: 60px;
+}

@@ -1,7 +1,8 @@
 function Home(){
     return(
         <>
-            <p>Info</p>
+            <h1>JuniorDev React JS - 2024</h1>
+            <p className="treciRed">Zavrsni projekt - VOLONTERI  -</p>
         </>
     )
 }

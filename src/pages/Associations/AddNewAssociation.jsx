@@ -52,7 +52,7 @@ function AddNewAssociation({ action }) {
                     </form>
                 </div>
             ) : (
-                <button onClick={() => setAddMode(true)}>Prijavi svoju udrugu</button>
+                <button className="btn btn-light btn-LG" onClick={() => setAddMode(true)}>Prijavi svoju udrugu</button>
             )}
 
             {showModal && (

@@ -27,18 +27,18 @@ function AssociationsTable({ associations, setAssociations }){
     };
 
     return (
-        <table className="table">
+        <table className="table table-striped">
             <thead>
                 <tr>
                     <th scope="col"></th>
                     <th scope="col" onClick={() => sortAssociations('name')} style={{cursor: 'pointer'}}>
-                        Name {sortBy === 'name' ? (ascendingOrder ? '▼' : '▲') : ''}
+                        Naziv {sortBy === 'name' ? (ascendingOrder ? '▼' : '▲') : ''}
                     </th>
                     <th scope="col" onClick={() => sortAssociations('town')} style={{cursor: 'pointer'}}>
-                        Town {sortBy === 'town' ? (ascendingOrder ? '▼' : '▲') : ''}
+                        Mjesto {sortBy === 'town' ? (ascendingOrder ? '▼' : '▲') : ''}
                     </th>
                     <th scope="col" onClick={() => sortAssociations('address')} style={{cursor: 'pointer'}}>
-                        Address {sortBy === 'address' ? (ascendingOrder ? '▼' : '▲') : ''}
+                        Adresa {sortBy === 'address' ? (ascendingOrder ? '▼' : '▲') : ''}
                     </th>
                     {admin && <th scope="col"></th>}
                 </tr>
