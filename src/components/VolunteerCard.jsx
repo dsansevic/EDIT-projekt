@@ -1,6 +1,5 @@
 import { useState, useContext } from "react";
 import { AdminContext } from "../contexts/AdminContext";
-// import { Offcanvas } from 'bootstrap';
 import { FontAwesomeIcon, faHouseChimney, faPenToSquare, faHandHoldingHeart, faPhone } from '../icons/iconImports';
 import {Delete, EditVolunteer, VolunteerCommentAndRating } from "./"
 
@@ -52,7 +51,7 @@ function VolunteerCard({ volunteer, setVolunteers, updateAll }) {
               {admin && (
                 <div className="ikonice">
                   <Delete id={volunteer.id} url="volunteers" update={setVolunteers} updateAll={updateAll}></Delete>
-                  <FontAwesomeIcon icon={faPenToSquare} onClick={() => setEditModeOn(true)} />
+                  <FontAwesomeIcon icon={faPenToSquare} className="editIcon" onClick={() => setEditModeOn(true)} />
                 </div>
               )}
             </>

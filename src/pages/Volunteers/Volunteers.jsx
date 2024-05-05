@@ -25,6 +25,8 @@ function Volunteers() {
             <div className="row justify-content-between">
                 {admin ? (
                     <>
+                        <p className="prviRed">uredi</p>
+                        <h1>Volontere</h1>
                         <div className="col-lg-6">
                             <div className="row">
                                 {filteredVolunteers.map((volunteer) => (

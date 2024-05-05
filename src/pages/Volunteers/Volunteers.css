@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: rgb(73, 1, 73);
 }
 .volunteer-container{
     padding-top: 50px;
@@ -31,22 +30,32 @@ p{
     /* padding: 30px 10px 30px 10px; */
     border-radius: 50px;
 }
+.editIcon:hover {
+    cursor: pointer;
+}
 .dodatnaKlasa {
     margin-top: 30px;
     border-radius: 2px !important;
     box-shadow:none;
-    border: none;
+    background: linear-gradient(to left, rgb(191, 218, 230), transparent);
+    border:none;
     padding: 100px;
     max-width: 400px;
 }
-p {
+/* p {
     color: rgb(124, 84, 18)
-}
+} */
 .prviRed {
     color: rgb(185, 130, 42);
     font-size: 20px;
     letter-spacing: 0.8rem;
     text-align: center;
+} 
+.checkboxes {
+    padding-top: 20px;
+}
+.podrtanTekst {
+    text-decoration: underline 1px orange;
 }
 .treciRed {
     font-size: 20px;
@@ -58,9 +67,9 @@ p {
 
 .listOfCheckboxes {
     max-width: 300px;
-    padding: 10px;
+    font-size: 15px;
+    padding: 5px;
     border-radius: 5%;
-    background-color: rgb(238, 251, 255);
     color: rgb(73, 1, 73);
     text-align: left;
     padding-left: 20px;

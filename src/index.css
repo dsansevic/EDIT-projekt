@@ -12,6 +12,13 @@ input, select, button {
   background-color: white;
   color: purple;
 }
+img {
+  border-bottom-left-radius:  10em !important;
+}
+button{
+  border: none;
+  outline: none;
+}
 
 a {
   font-weight: 500;

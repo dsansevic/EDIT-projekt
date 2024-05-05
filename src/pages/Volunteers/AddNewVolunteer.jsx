@@ -123,7 +123,7 @@ function AddNewVolunteer({setVolunteers, updateAll}) {
         <div className="card d-flex align-items-center dodatnaKlasa">
             <div className="card-body">
                 <form onSubmit={sendData}>
-                    <h2 className="addNewTitle">Novi korisnik</h2>
+                    <h2 className="addNewTitle">Dodaj volontera</h2>
                     {/* <NameInput value={formData.name} button = {false} handlePosalji={(value) => setFormData({ ...formData, name: value })} /> */}
 
                     <NameInput value={formData.name} onChange={(value) => setFormData({ ...formData, name: value })} />
