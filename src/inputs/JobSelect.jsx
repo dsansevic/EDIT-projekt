@@ -12,7 +12,7 @@ function JobSelect({onChange}){
     
       return (
         <div className="checkboxes">
-        <p className="podrtanTekst">Odaberi jednu ili više vrsta poslova: </p>
+        <p className="text-danger">Odaberi jedan ili više poslova: </p>
         {jobs.map(job => (
           <div key={job.id} className="listOfCheckboxes">
             <input

@@ -54,7 +54,7 @@ function Activities() {
             </div>
             {showDetaljnije && selectedActivity && (
                 <div>
-                    <button className="btn btn-secondary" onClick={hideDetails}>Sakrij</button>
+                    <button className="btn btn-secondary" onClick={hideDetails}>Povratak na stranicu</button>
                     <DetailedActivityCard activity={selectedActivity} setActivities={setActivities} />
                 </div>
             )}

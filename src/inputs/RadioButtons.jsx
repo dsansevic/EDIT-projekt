@@ -8,6 +8,7 @@ function RadioButtons({ value, onChange }) {
           name="gender"
           id="male"
           value="male"
+          required
           checked={value === "male"}
           onChange={onChange}
         />
@@ -22,6 +23,7 @@ function RadioButtons({ value, onChange }) {
           name="gender"
           id="female"
           value="female"
+          required
           checked={value === "female"}
           onChange={onChange}
         />

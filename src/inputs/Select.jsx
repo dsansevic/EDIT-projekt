@@ -1,7 +1,7 @@
 import axios from "axios";
-import { useEffect, useState, useRef, name } from "react";
+import { useEffect, useState, useRef } from "react";
 
-function Select({value, name, onChange, autoFocus, url}){
+function Select({value, name, onChange, autoFocus, url, placeholder}){
     const [town, setTown] = useState([]);
     const selectRef = useRef(null);
 
@@ -32,7 +32,7 @@ function Select({value, name, onChange, autoFocus, url}){
                 onChange={onChange}
                 required
               >
-                <option value="" >{name}</option>
+                <option value="" >{placeholder}</option>
                 {town.map(town => (
                   <option key={town.id} value={town.name}>
                     {town.name}

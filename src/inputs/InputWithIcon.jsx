@@ -1,11 +1,11 @@
 import { useRef, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-function InputWithIcon({ name, value, inputChange, icon, autoFocus }) {
+function InputWithIcon({ name, value, inputChange, icon, autoFocus, placeholder }) {
     const inputRef = useRef(null);
 
     useEffect(() => {
-        if (autoFocus &&inputRef.current) {
+        if (autoFocus && inputRef.current) {
             inputRef.current.focus();
       }
     }, [autoFocus]);
@@ -19,7 +19,7 @@ function InputWithIcon({ name, value, inputChange, icon, autoFocus }) {
                 type="text"
                 className="form-control"
                 name={name}
-                placeholder={name}
+                placeholder={placeholder}
                 value={value}
                 onChange={inputChange}
                 ref={inputRef}

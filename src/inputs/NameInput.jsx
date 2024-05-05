@@ -17,7 +17,7 @@ function NameInput({ value, onChange, button, handlePosalji }) {
             selectRef.current.focus();
         }
     }, []);
-    const inputChange = (e) => { // nepotreno 
+    const inputChange = (e) => {
         const { value } = e.target;
         onChange(value);
     };
@@ -29,7 +29,6 @@ function NameInput({ value, onChange, button, handlePosalji }) {
         if (words.length < 2) {
             error = "Unesite i ime i prezime";
         }
-
         return error;
     };
 

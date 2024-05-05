@@ -20,6 +20,7 @@ function AddNewAssociation({ action }) {
 
     const handleFormSubmit = (e) => {
         e.preventDefault();
+
         action(prevState => [...prevState, formData]);
 
         AxiosPost({
@@ -60,13 +61,13 @@ function AddNewAssociation({ action }) {
                     </div>
                     <div className="row">
                         <div className="col">
-                            <InputWithIcon name="name" value={formData.name} icon={faHandHoldingHeart} inputChange={inputChange} autoFocus={true}/>
+                            <InputWithIcon name="name" value={formData.name} icon={faHandHoldingHeart} inputChange={inputChange} autoFocus={true} placeholder="Naziv"/>
                         </div>
                         <div className="col">    
-                            <InputWithIcon name="address" value={formData.address} icon={faMapLocationDot} inputChange={inputChange}/>
+                            <InputWithIcon name="address" value={formData.address} icon={faMapLocationDot} inputChange={inputChange} placeholder="Adresa"/>
                         </div>
                         <div className="col">
-                            <Select value={formData.town} url="address" name="town" onChange={inputChange}/>
+                            <Select value={formData.town} url="address" name="town" onChange={inputChange} placeholder="Odaberi grad"/>
                         </div>
                     </div>
                     <div className="row justify-content-center">

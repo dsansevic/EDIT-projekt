@@ -9,6 +9,7 @@ function AddNewActivity({ setActivities, action }) {
         date: "",
         info: "",
         address: "",
+        association: "",
         town: ""
     });
 
@@ -19,6 +20,14 @@ function AddNewActivity({ setActivities, action }) {
 
     const sendData = (e) => {
         e.preventDefault();
+        const currentDate = new Date();
+        const selectedDate = new Date(formData.date);
+        
+        if (selectedDate < currentDate) {
+            alert("Molimo odaberite datum u budućnosti.");
+            return;
+        }
+
         const dataToSend = prepareDataForSending("activity", formData);
 
         AxiosPost({
@@ -41,24 +50,27 @@ function AddNewActivity({ setActivities, action }) {
             </div>
             <div className="row">
                 <div className="col">
-                    <InputWithIcon value={formData.name} inputChange={inputChange} name="name" icon={faHandshakeAngle} placeholder="Naziv aktivnosti" />
+                    <InputWithIcon value={formData.name} inputChange={inputChange} name="name" autoFocus={true} icon={faHandshakeAngle} placeholder="Naziv" />
                 </div>
                 <div className="col">
                     <InputWithIcon value={formData.address} name="address" inputChange={inputChange} icon={faMapLocationDot} placeholder="Adresa" />
                 </div>
                 <div className="col">
-                    <InputWithIcon value={formData.info} name="info" inputChange={inputChange} icon={faCircleInfo} placeholder="Informacije" />
+                    <InputWithIcon value={formData.info} name="info" inputChange={inputChange} autoFocus={false} icon={faCircleInfo} placeholder="Info" />
                 </div>
             </div>
             <div className="row">
+                {/* <div className="col">
+                    <InputithIcon value={formData.association} name="association" inputChange={inputChange} autoFocus={false} icon={faUsers} placeholder="Udruga" />
+                </div> */}
                 <div className="col">
-                    <InputWithIcon value={formData.association} name="association" inputChange={inputChange} icon={faUsers} placeholder="Udruga" />
+                    <Select value={formData.town} onChange={inputChange} name="town" url="address" placeholder="Odaberi grad" />
                 </div>
                 <div className="col">
-                    <Select value={formData.town} onChange={inputChange} name="town" url="address" placeholder="Grad" />
+                    <Select value={formData.association} onChange={inputChange} name="association" url="associations" placeholder="Odaberi udrugu" />
                 </div>
                 <div className="col">
-                    <input className="form-control" type="date" name="date" value={formData.date} onChange={inputChange} />
+                    <input className="form-control" type="date" name="date" value={formData.date} onChange={inputChange} required/>
                 </div>
             </div>
             <div className="row">

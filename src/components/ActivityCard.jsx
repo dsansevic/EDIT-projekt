@@ -27,7 +27,7 @@ function ActivityCard({ activities, setActivities, showDetails }) {
                                 </div>
                                 <div className="d-flex align-items-center actP">
                                     <FontAwesomeIcon icon={faMapLocationDot} style={{ color: "#9b3a02" }}/>      
-                                    <p className="card-text mb-0 flex-grow-1">{activity.address}, {activity.town}</p>
+                                    <p className="card-text mb-0 flex-grow-1">{activity.address}</p>
                                 </div>
                                 <div className="d-flex align-items-center actP">
                                     <FontAwesomeIcon icon={faHouseChimney} style={{ color: "#9b3a02" }} />

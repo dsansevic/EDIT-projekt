@@ -10,7 +10,7 @@ function AddNewVolunteer({setVolunteers, updateAll}) {
     const [formData, setFormData] = useState({
         name: "",
         contact_number: "",
-        town: "Baška Voda",
+        town: "",
         image:"",
         gender:"",
         association:"",
@@ -90,6 +90,11 @@ function AddNewVolunteer({setVolunteers, updateAll}) {
             alert("Neispravan format broja mobitela: potrebno barem 9 znakova (uključujući pozivni broj).");
             return;
           }
+
+        if (formData.jobs.length === 0) {
+            alert("Odaberite barem jedan posao.");
+            return;
+        }
         if (formData.image === '') {
             let id = Math.floor(Math.random() * 78) + 1;
             console.log(id);
@@ -111,7 +116,7 @@ function AddNewVolunteer({setVolunteers, updateAll}) {
             name: "",
             contact_number: "",
             association:"",
-            town: "Baška Voda",
+            town: "",
             image: "",
             gender: "",
             jobs: []
@@ -126,13 +131,13 @@ function AddNewVolunteer({setVolunteers, updateAll}) {
                     {/* <NameInput value={formData.name} button = {false} handlePosalji={(value) => setFormData({ ...formData, name: value })} /> */}
 
                     <NameInput value={formData.name} onChange={(value) => setFormData({ ...formData, name: value })} />
-                    <Select value={formData.town} onChange={inputChange} url="address" name="town" autoFocus={false}/>
-                    <InputWithIcon name="association" value={formData.association} icon ={faHandHoldingHeart} inputChange={inputChange}/>
+                    <Select value={formData.town} onChange={inputChange} url="address" name="town" autoFocus={false} placeholder="Odaberi grad"/>
+                    <Select value={formData.association} onChange={inputChange} name="association" url="associations" placeholder="Odaberi udrugu" />
                     <PhoneInput country={'hr'} name = "contact_number" value={formData.contact_number} onChange={handleContactChange} inputProps={{required:true}}></PhoneInput>
                     <RadioButtons value={formData.gender} onChange={inputChange} />
                     <JobSelect onChange={handleJobChange} />
 
-
+                    <p className="text-danger">Slika nije obavezna.</p>
                     <div className="input-group mb-2">
                         <input type="file" className="form-control" name ="image" id="inputGroupFile02" onChange={handleImageChange} style={{ maxWidth: '300px' }}/>
                     </div>
