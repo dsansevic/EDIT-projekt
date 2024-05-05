@@ -178,12 +178,18 @@
       "jobs": [
         "Prijevoz"
       ],
-      "grades": [],
-      "average_grade": "",
-      "grade_count": "",
-      "comments": [
-        {}
-      ]
+      "grades": [
+        5,
+        4,
+        5,
+        4,
+        5,
+        5,
+        2,
+        2,
+        4
+      ],
+      "grade_count": 9
     },
     {
       "id": "9ac8",
@@ -195,27 +201,13 @@
       "jobs": [
         "Edukacija"
       ],
-      "grades": [],
-      "average_grade": "",
-      "grade_count": "",
-      "comments": [
-        {
-          "name": "Ivona",
-          "content": "Odlična!"
-        },
-        {
-          "name": "Ivana",
-          "content": "Odlična!"
-        },
-        {
-          "name": "Saša",
-          "content": "Uvijek spremna pomoći!"
-        },
-        {
-          "name": "Marko",
-          "content": "Dobra"
-        }
-      ]
+      "grades": [
+        2,
+        5,
+        5,
+        5
+      ],
+      "grade_count": 4
     },
     {
       "id": "a6cf",
@@ -227,23 +219,13 @@
       "jobs": [
         "Čišćenje"
       ],
-      "grades": [],
-      "average_grade": "",
-      "grade_count": "",
-      "comments": [
-        {
-          "name": "ivana",
-          "content": "Odlična"
-        },
-        {
-          "name": "Antonija",
-          "content": "Susretljiva i pažljiva."
-        },
-        {
-          "name": "d",
-          "content": "dd"
-        }
-      ]
+      "grades": [
+        4,
+        4,
+        3,
+        5
+      ],
+      "grade_count": 4
     },
     {
       "id": "0fd1",
@@ -255,12 +237,11 @@
       "jobs": [
         "Organizacija događaja"
       ],
-      "grades": [],
-      "average_grade": "",
-      "grade_count": "",
-      "comments": [
-        {}
-      ]
+      "grades": [
+        4,
+        1
+      ],
+      "grade_count": 2
     },
     {
       "id": "2d48",
@@ -274,9 +255,7 @@
         "Briga o životinjama"
       ],
       "grades": [],
-      "average_grade": "",
-      "grade_count": "",
-      "comments": []
+      "grade_count": 0
     },
     {
       "id": "b98c",
@@ -289,15 +268,10 @@
         "Edukacija",
         "Briga o osobama s posebnim potrebama"
       ],
-      "grades": [],
-      "average_grade": "",
-      "grade_count": "",
-      "comments": [
-        {
-          "name": "Ratko",
-          "content": "Srdačna"
-        }
-      ]
+      "grades": [
+        5
+      ],
+      "grade_count": 1
     },
     {
       "id": "35fc",
@@ -311,9 +285,7 @@
         "Čišćenje"
       ],
       "grades": [],
-      "average_grade": "",
-      "grade_count": "",
-      "comments": []
+      "grade_count": 0
     },
     {
       "id": "ec70",
@@ -326,9 +298,7 @@
         "Razno"
       ],
       "grades": [],
-      "average_grade": "",
-      "grade_count": "",
-      "comments": []
+      "grade_count": 0
     },
     {
       "id": "6bc4",
@@ -341,9 +311,7 @@
         "Ekologija"
       ],
       "grades": [],
-      "average_grade": "",
-      "grade_count": "",
-      "comments": []
+      "grade_count": 0
     },
     {
       "id": "05e8",
@@ -353,10 +321,10 @@
       "association": "Udruga Lara",
       "contact_number": "8488454545",
       "jobs": [],
-      "grades": [],
-      "average_grade": "",
-      "grade_count": "",
-      "comments": []
+      "grades": [
+        3
+      ],
+      "grade_count": 1
     },
     {
       "id": "2ad1",
@@ -366,10 +334,10 @@
       "association": "Udruga Srce",
       "contact_number": "385777777777",
       "jobs": [],
-      "grades": [],
-      "average_grade": "",
-      "grade_count": "",
-      "comments": []
+      "grades": [
+        2
+      ],
+      "grade_count": 1
     },
     {
       "id": "5ca0",
@@ -381,10 +349,10 @@
       "jobs": [
         "Medicinska pomoć"
       ],
-      "grades": [],
-      "average_grade": "",
-      "grade_count": "",
-      "comments": []
+      "grades": [
+        5
+      ],
+      "grade_count": 1
     },
     {
       "id": "ac99",
@@ -398,9 +366,7 @@
         "Edukacija"
       ],
       "grades": [],
-      "average_grade": "",
-      "grade_count": "",
-      "comments": []
+      "grade_count": 0
     },
     {
       "id": "88d7",
@@ -413,9 +379,7 @@
         "Medicinska pomoć"
       ],
       "grades": [],
-      "average_grade": "",
-      "grade_count": "",
-      "comments": []
+      "grade_count": 0
     }
   ],
   "associations": [
@@ -504,6 +468,12 @@
       "name": "Udruga Život",
       "town": "Klis",
       "address": "Metković 8"
+    },
+    {
+      "id": "aed2",
+      "name": "iva",
+      "town": "Lećevica",
+      "address": "asDASD"
     }
   ],
   "address": [

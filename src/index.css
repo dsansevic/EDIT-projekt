@@ -47,14 +47,6 @@ h1 {
   color: rgb(9, 206, 220);
   letter-spacing: .2rem;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  /* background: url(https://img.freepik.com/free-vector/gradient-blue-dynamic-lines-background_23-2148995926.jpg) no-repeat center center;
-  background-size: cover;
-  color: #fff;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -moz-background-clip:text;
-  background-clip:text;  
-  border-bottom: 2px solid rgb(243, 196, 251);*/
 }
 
 .nav-link.active {

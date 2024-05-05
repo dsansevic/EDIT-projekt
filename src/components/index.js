@@ -6,6 +6,7 @@ import AssociationsTable from "./AssociationsTable";
 import PendingAssociationTable from "./PendingAssociationTable";
 import ActivityCard from "./ActivityCard";
 import DetailedActivityCard from "./DetailedActivityCard";
+import StarRating from "./StarRating";
 
 export {
     Navbar,
@@ -15,5 +16,6 @@ export {
     AssociationsTable,
     PendingAssociationTable,
     DetailedActivityCard,
-    ActivityCard
+    ActivityCard,
+    StarRating
 };

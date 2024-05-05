@@ -1,7 +1,7 @@
 import { useState, useContext } from "react";
 import { AdminContext } from "../contexts/AdminContext";
 import { FontAwesomeIcon, faHouseChimney, faPenToSquare, faHandHoldingHeart, faPhone } from '../icons/iconImports';
-import {Delete, EditVolunteer } from "./"
+import {Delete, EditVolunteer, StarRating } from "./"
 
 function VolunteerCard({ volunteer, volunteers, setVolunteers, updateAll }) {
   const {admin} = useContext(AdminContext);
@@ -54,26 +54,26 @@ function VolunteerCard({ volunteer, volunteers, setVolunteers, updateAll }) {
               )}
             </>
             )}
-          </div>
-          <button type="button" className="btn btn-light mt-auto" data-bs-toggle="modal" data-bs-target={`#modal-${volunteer.id}`}>Ocijeni</button>
-          
-          <div className="modal fade" id={`modal-${volunteer.id}`} tabIndex="-1">
-            <div className="modal-dialog">
-              <div className="modal-content">
-                <div className="modal-header">
-                  <h5 className="modal-title">{volunteer.name}</h5>
-                  <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-              <div className="modal-body">
             </div>
-         </div>
-  </div>
-</div>
-          
+            <button type="button" className="btn btn-light mt-auto" data-bs-toggle="modal" data-bs-target={`#modal-${volunteer.id}`}>Ocijeni</button>
+  
+            <div className="modal fade" id={`modal-${volunteer.id}`} tabIndex="-1">
+              <div className="modal-dialog">
+                <div className="modal-content">
+                  <div className="modal-header">
+                    <h5 className="modal-title">{volunteer.name}</h5>
+                    <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div className="modal-body">
+                    <StarRating volunteer={volunteer} volunteers={volunteers} setVolunteers={setVolunteers} />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  );
-}
-
+    );
+  }
+  
 export default VolunteerCard

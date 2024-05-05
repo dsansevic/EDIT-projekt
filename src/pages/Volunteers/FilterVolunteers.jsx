@@ -20,15 +20,13 @@ function FilterVolunteers({ volunteers, setFilteredVolunteers }) {
       let filtered = volunteers;
   
       if (filterTown && filterJob) {
-          // town & job filter
           filtered = volunteers.filter((vol) => {
               return vol.town === filterTown && vol.jobs.includes(filterJob);
           });
       } else if (filterTown) {
-          // town filter
           filtered = volunteers.filter((vol) => vol.town === filterTown);
+
       } else if (filterJob) {
-          // job filter
           filtered = volunteers.filter((vol) => vol.jobs.includes(filterJob));
       }
       
@@ -42,17 +40,20 @@ function FilterVolunteers({ volunteers, setFilteredVolunteers }) {
       setFilteredVolunteers(volunteers)
       setFilterJob("");
       setFilterTown("");
+      setNoFilteredVolunteers(false);
     }
 
     return (
-        <div className="col-lg-11 d-flex align-items-center justify-content-between">
-            <p>Filtriraj po jednom ili oba parametra</p>
-            <Select value={filterTown.town} url="address" name="town" onChange={handleTownChange}/>
-            <Select value={filterJob} url="jobs" name="job" onChange={handleJobChange}/>
-            <button className="btn btn-info btn-md" onClick={handleApplyFilter}>Primijeni filter</button>
-            <button className="btn btn-warning btn-md" onClick={handleRemoveFilter}>Ukloni filtere</button>
-            {noFilteredVolunteers && <p>Nema podataka za prikaz</p>}
-        </div>
+        <>
+            <div className="col-lg-11 d-flex align-items-center justify-content-between">
+                <p>Filtriraj po jednom ili oba parametra</p>
+                <Select value={filterTown} url="address" name="town" onChange={handleTownChange} placeholder="Grad" autoFocus={true}/>
+                <Select value={filterJob} url="jobs" name="job" onChange={handleJobChange} placeholder="Mjesto"/>
+                <button className="btn btn-info btn-md" onClick={handleApplyFilter}>Primijeni filter</button>
+                <button className="btn btn-warning btn-md" onClick={handleRemoveFilter}>Ukloni filtere</button>
+            </div>
+            {noFilteredVolunteers && <h2 id="noData">Nema podataka za prikaz...</h2>}
+        </>
     );
 }
 

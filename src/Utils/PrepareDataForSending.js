@@ -19,9 +19,7 @@ function prepareDataForSending( type, object ) {
                 "contact_number": object.contact_number,
                 "jobs": object.jobs,
                 "grades": [],
-                "average_grade": "",
-                "grade_count": "",
-                "comments": []
+                "grade_count": 0,
             };
         default:
             return {};

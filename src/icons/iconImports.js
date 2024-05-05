@@ -15,7 +15,8 @@ import {
     faEarthEurope,
     faUsers,
     faSpinner,
-    faClock
+    faClock,
+    faStar
 } from '@fortawesome/free-solid-svg-icons';
 
 export { 
@@ -34,5 +35,6 @@ export {
     faEarthEurope,
     faUsers,
     faSpinner, 
-    faClock
+    faClock,
+    faStar
 };
