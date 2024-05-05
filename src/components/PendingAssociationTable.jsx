@@ -55,7 +55,7 @@ function PendingAssociationTable({ associations, setAssociations }) {
                             <td>{pen.name}</td>
                             <td>{pen.town}</td>
                             <td>{pen.address}</td>
-                            <td><Delete id={pen.id} update={setPendingAssociation} url="pending_associations"/></td>    
+                            <td><Delete id={pen.id} update={setPendingAssociation} filter={false} url="pending_associations"/></td>    
                             <td><FontAwesomeIcon icon={faCheck} onClick={() => approveAssociation(pen)} /></td>
                         </tr>
                     ))}

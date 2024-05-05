@@ -15,7 +15,7 @@ function prepareDataForSending( type, object ) {
                 "name": object.name,
                 "town": object.town,
                 "image": object.image,
-                "association": "",
+                "association": object.association,
                 "contact_number": object.contact_number,
                 "jobs": object.jobs,
                 "grades": [],

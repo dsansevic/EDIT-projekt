@@ -1,8 +1,8 @@
 import { InputWithIcon, Select } from "../inputs";
 import { useState } from "react";
-import axios from "axios";
 import {faMapLocationDot, faHandshakeAngle, faCircleInfo, faEarthEurope, faUsers } from "../icons/iconImports";
 import prepareDataForSending from "../PrepareDataForSending";
+import AxiosPost from "../AxiosPost";
 
 function AddNewActivity({ setActivities, action }) {
     const [formData, setFormData] = useState({
@@ -20,16 +20,14 @@ function AddNewActivity({ setActivities, action }) {
 
     const sendData = (e) => {
         e.preventDefault();
-
         const dataToSend = prepareDataForSending("activity", formData);
 
-        axios.post('http://localhost:3001/activities', dataToSend)
-            .then(res => {
-                setActivities(prevState => [...prevState, res.data]);
-            })
-            .catch(error => {
-                console.error("Error adding new activity: ", error);
-            });
+        AxiosPost({
+            url: 'activities', 
+            update: setActivities,     
+            dataToSend: dataToSend,  
+            filter: false     
+            });  
 
         action();
     }

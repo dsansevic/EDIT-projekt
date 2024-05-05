@@ -2,7 +2,7 @@ import axios from "axios";
 import { useState } from "react";
 import {FontAwesomeIcon, faTrashCan} from '../icons/iconImports'
 
-function Delete({id, update, updateAll, url})
+function Delete({id, update, updateAll, url, filter})
 {
     const [deleteState, setDeleteState] = useState(false);
     async function deleteById() {
@@ -10,7 +10,7 @@ function Delete({id, update, updateAll, url})
         const rez = await axios.get(`http://localhost:3001/${url}`);
         setDeleteState(false);
         update(rez.data);
-        updateAll(rez.data);
+        {filter && updateAll(rez.data);}
     }
 
     return(

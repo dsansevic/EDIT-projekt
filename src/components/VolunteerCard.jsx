@@ -20,7 +20,7 @@ function VolunteerCard({ volunteer, setVolunteers, updateAll }) {
           </div>
           <h5 className="card-title">{volunteer.name}</h5>
 
-          <i>{volunteer.jobs.map(job => job).join(", ")}</i>
+          {/* <i>{volunteer.jobs.map(job => job).join(", ")}</i> */}
           
           <div className="p-3">
             
@@ -49,7 +49,7 @@ function VolunteerCard({ volunteer, setVolunteers, updateAll }) {
           
               {admin && (
                 <div className="ikonice">
-                  <Delete id={volunteer.id} url="volunteers" update={setVolunteers} updateAll={updateAll}></Delete>
+                  <Delete id={volunteer.id} url="volunteers" update={setVolunteers} updateAll={updateAll} filter={true}></Delete>
                   <FontAwesomeIcon icon={faPenToSquare} className="editIcon" onClick={() => setEditModeOn(true)} />
                 </div>
               )}

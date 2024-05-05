@@ -5,8 +5,8 @@ function InputWithIcon({ name, value, inputChange, icon, autoFocus }) {
     const inputRef = useRef(null);
 
     useEffect(() => {
-        if (autoFocus &&selectRef.current) {
-          selectRef.current.focus();
+        if (autoFocus &&inputRef.current) {
+            inputRef.current.focus();
       }
     }, [autoFocus]);
 

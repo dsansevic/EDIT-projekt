@@ -4,7 +4,7 @@ import { faHandHoldingHeart } from "../../icons/iconImports";
 import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
 import prepareDataForSending from "../../PrepareDataForSending";
-import axios from "axios";
+import AxiosPost from "../../AxiosPost";
 
 function AddNewVolunteer({setVolunteers, updateAll}) {
     const [imageSelected, setImageSelected] = useState(false);
@@ -99,15 +99,15 @@ function AddNewVolunteer({setVolunteers, updateAll}) {
 
         const dataToSend = prepareDataForSending("volunteer", formData);
         console.log(dataToSend);
+
+        AxiosPost({
+            url: 'volunteers', 
+            update: setVolunteers,   
+            updateAll: updateAll,   
+            dataToSend: dataToSend,
+            filter: true       
+          });
           
-        axios.post('http://localhost:3001/volunteers', dataToSend)
-        .then(res => {
-            setVolunteers(prevState => [...prevState, res.data]);
-            updateAll(prevState => [...prevState, res.data]);
-            })
-            .catch(error => {
-                console.error("Error adding new volunteer: ", error);
-            });
         setFormData({
             name: "",
             contact_number: "",

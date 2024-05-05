@@ -3,6 +3,7 @@ import axios from "axios";
 import { InputWithIcon, Select } from "../../inputs";
 import { faHandHoldingHeart, faMapLocationDot} from "../../icons/iconImports"
 import "./Associations.css";
+import AxiosPost from "../../AxiosPost";
 
 function AddNewAssociation({ action }) {
     const [addMode, setAddMode] = useState(false);
@@ -22,13 +23,12 @@ function AddNewAssociation({ action }) {
         e.preventDefault();
         action(prevState => [...prevState, formData]);
 
-        axios.post('http://localhost:3001/pending_associations', formData)
-            .then(res => {
-                action(prevState => [...prevState, res.data]);
-            })
-            .catch(error => {
-                console.error("Error: ", error);
-            });
+        AxiosPost({
+            url: 'pending_associations', 
+            update: action,     
+            dataToSend: formData,  
+            filter: false     
+            });   
 
         setAddMode(false);
         setTimeout(() => {
