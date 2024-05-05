@@ -142,9 +142,9 @@
     {
       "id": "9ac8",
       "name": "Pia Jukica",
-      "town": "Dicmo",
+      "town": "Trilj",
       "image": "https://xsgames.co/randomusers/avatar.php?g=female&id=63",
-      "association": "",
+      "association": "Udruga Loki",
       "contact_number": "38588894989",
       "jobs": [
         "Edukacija"
@@ -165,6 +165,41 @@
       "contact_number": "38588894989",
       "jobs": [
         "Čišćenje"
+      ],
+      "grades": [],
+      "average_grade": "",
+      "grade_count": "",
+      "comments": [
+        {}
+      ]
+    },
+    {
+      "id": "0fd1",
+      "name": "Borna Goreta",
+      "town": "Split",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=male&id=10",
+      "association": "",
+      "contact_number": "3855565657",
+      "jobs": [
+        "Organizacija događaja"
+      ],
+      "grades": [],
+      "average_grade": "",
+      "grade_count": "",
+      "comments": [
+        {}
+      ]
+    },
+    {
+      "id": "2d48",
+      "name": "Petra Svilović",
+      "town": "Baška Voda",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=female&id=16",
+      "association": "",
+      "contact_number": "8989898686",
+      "jobs": [
+        "Ekologija",
+        "Briga o životinjama"
       ],
       "grades": [],
       "average_grade": "",

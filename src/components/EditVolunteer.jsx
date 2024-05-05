@@ -1,6 +1,8 @@
 import Select from "../inputs/Select"
 import axios from "axios";
 import { useState} from "react";
+import { InputWithIcon } from "../inputs";
+import { faPhone, faHandHoldingHeart } from "../icons/iconImports";
 
 function EditVolunteer({volunteer, setVolunteers, setEditModeOn, updateAll}){
     const [formData, setFormData] = useState(volunteer); // za pohranu privremenih promjena
@@ -25,10 +27,10 @@ function EditVolunteer({volunteer, setVolunteers, setEditModeOn, updateAll}){
     return(
         <>
         <Select value={formData.town} onChange={inputChange} url="address" name="town" autoFocus={true}/>
-        <input type="text" value={formData.association} name= "association" onChange={inputChange} ></input>
-        <input type="text" value={formData.contact_number} name= "contact_number" onChange={inputChange} ></input>
-        <button onClick={handleSave}>Save</button>
-        <button onClick={()=>setEditModeOn(false)}>Exit</button>
+        <InputWithIcon name= "association" value={formData.association} icon ={faHandHoldingHeart} inputChange={inputChange}/>
+        <InputWithIcon name= "contact_number" value={formData.contact_number} icon= {faPhone} inputChange={inputChange}/>
+        <button className="btn btn-light btn-sm mr-2" style={{ marginRight: '10px' }} onClick={handleSave}>Save</button>
+        <button className="btn btn-danger btn-sm" onClick={()=>setEditModeOn(false)}>Exit</button>
         </>
     )
 }

@@ -111,6 +111,7 @@ function AddNewVolunteer({setVolunteers, updateAll}) {
         setFormData({
             name: "",
             contact_number: "",
+            association:"",
             town: "Baška Voda",
             image: "",
             gender: "",
@@ -119,7 +120,7 @@ function AddNewVolunteer({setVolunteers, updateAll}) {
     }
     
     return(
-        <div className="card">
+        <div className="card d-flex align-items-center dodatnaKlasa">
             <div className="card-body">
                 <form onSubmit={sendData}>
                     <h2 className="addNewTitle">Novi korisnik</h2>
@@ -134,7 +135,7 @@ function AddNewVolunteer({setVolunteers, updateAll}) {
 
 
                     <div className="input-group mb-2">
-                        <input type="file" className="form-control" name ="image" id="inputGroupFile02" onChange={handleImageChange}/>
+                        <input type="file" className="form-control" name ="image" id="inputGroupFile02" onChange={handleImageChange} style={{ maxWidth: '300px' }}/>
                     </div>
                     {imageSelected && (
                         <button type="button" onClick={handleRemoveImage} className="btn btn-danger btn-md mb-2">Ukloni sliku</button>

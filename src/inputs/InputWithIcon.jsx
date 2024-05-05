@@ -1,16 +1,17 @@
-import {FontAwesomeIcon,faHandshakeAngle} from "../icons/iconImports"
 import { useRef, useEffect } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-function InputWithIcon({ name, value, inputChange, icon }) {
+function InputWithIcon({ name, value, inputChange, icon, autoFocus }) {
     const inputRef = useRef(null);
 
     useEffect(() => {
-        if (inputRef.current)
-            inputRef.current.focus();
-    }, []);
+        if (autoFocus &&selectRef.current) {
+          selectRef.current.focus();
+      }
+    }, [autoFocus]);
 
     return (
-        <div className="input-group mb-3">
+        <div className="input-group mb-3" style={{ maxWidth: '300px' }}>
             <span className="input-group-text" id="basic-addon1">
                 <FontAwesomeIcon icon={icon} />
             </span>

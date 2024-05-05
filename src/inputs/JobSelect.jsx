@@ -11,9 +11,9 @@ function JobSelect({onChange}){
       }, []);
     
       return (
-        <div>
+        <div className="checkboxes">
         {jobs.map(job => (
-          <div key={job.id}>
+          <div key={job.id} className="listOfCheckboxes">
             <input
               type="checkbox"
               value={job.name}

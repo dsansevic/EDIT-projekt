@@ -33,7 +33,7 @@ function Volunteers() {
                                 ))}
                             </div>
                         </div>
-                        <div className="col-lg-4" style={{ top: 0 }}>
+                        <div className="col-md-4" style={{ top: 0 }}>
                             <AddNewVolunteer setVolunteers={setFilteredVolunteers} volunteers={filteredVolunteers} updateAll={setVolunteers} />
                             
                         </div>
@@ -43,12 +43,14 @@ function Volunteers() {
                         <p className="prviRed">Upoznajte naše</p>
                         <h1>Volontere</h1>
                         <p className="treciRed">Njihov nesebičan trud i predanost ne samo što donose pozitivne promjene u našoj zajednici, već i služe kao inspiracija za sve nas. Hvala im što su svjetlo koje osvjetljava put drugima.</p>
-                        <FilterVolunteers volunteers={volunteers} setFilteredVolunteers={setFilteredVolunteers}/>
-                        <div className="row">
-                            {filteredVolunteers.map((volunteer) => (
-                                
-                                <VolunteerCard key={volunteer.id} volunteer={volunteer} setVolunteers={setFilteredVolunteers} updateAll={setVolunteers} />
-                            ))}
+                        <div className="volunteer-container">
+                            <FilterVolunteers volunteers={volunteers} setFilteredVolunteers={setFilteredVolunteers}/>
+                            <div className="row">
+                                {filteredVolunteers.map((volunteer) => (
+                                    
+                                    <VolunteerCard key={volunteer.id} volunteer={volunteer} setVolunteers={setFilteredVolunteers} updateAll={setVolunteers} />
+                                ))}
+                            </div>
                         </div>
                     </div>
                 )}

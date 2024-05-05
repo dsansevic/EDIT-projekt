@@ -20,10 +20,10 @@ function Select({value, name, onChange, autoFocus, url}){
   }, [autoFocus]);
 
     return (
-      <div className="form-group mb-3">
+      <div className="form-group mb-3" style={{ maxWidth: '300px' }}>
           <div className="input-group">
               <div className="input-group-prepend">
-                  <span className="input-group-text">{name === "town" ? "🏠︎" : "💼"}</span>
+                  <span className="input-group-text">{(name==="town")? "🏠︎" : "💼"}</span>
               </div>
               <select className="form-select"
                 name={name}

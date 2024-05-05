@@ -34,7 +34,7 @@ function NameInput({ value, onChange, button, handlePosalji }) {
     };
 
     return (
-        <div className="form-group">
+        <div className="form-group" style={{ maxWidth: '300px' }}>
             <div className="input-group flex-nowrap">
                 <span className="input-group-text" id="addon-wrapping">👤</span>
                 <input 

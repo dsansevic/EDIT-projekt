@@ -45,7 +45,7 @@ function AddNewAssociation({ action }) {
             {addMode ? (
                 <div className="container">
                     <form onSubmit={handleFormSubmit}>
-                        <InputWithIcon name="name" value={formData.name} icon ={faHandHoldingHeart} inputChange={inputChange}/>
+                        <InputWithIcon name="name" value={formData.name} icon ={faHandHoldingHeart} inputChange={inputChange} autoFocus={true}/>
                         <InputWithIcon name="address" value={formData.address} icon={faMapLocationDot} inputChange={inputChange}/>
                         <Select value={formData.town} url="address" name="town" onChange={inputChange}/>
                         <button type='submit' className="btn btn-light btn-md">Pošalji</button>

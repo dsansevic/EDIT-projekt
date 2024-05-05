@@ -2,7 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: rgb(5, 66, 5);
+    color: rgb(73, 1, 73);
+}
+.volunteer-container{
+    padding-top: 50px;
 }
 input, select {
     text-align: center;
@@ -28,7 +31,14 @@ p{
     /* padding: 30px 10px 30px 10px; */
     border-radius: 50px;
 }
-
+.dodatnaKlasa {
+    margin-top: 30px;
+    border-radius: 2px !important;
+    box-shadow:none;
+    border: none;
+    padding: 100px;
+    max-width: 400px;
+}
 p {
     color: rgb(124, 84, 18)
 }
@@ -46,34 +56,21 @@ p {
     color: rgb(198, 169, 122);
 }
 
-/* .avatarImage {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    overflow: hidden;
-} */
-
-.dropdown {
-    background-color: white;
-    width: max-content;
-    position: relative;
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
 .listOfCheckboxes {
+    max-width: 300px;
     padding: 10px;
     border-radius: 5%;
-    background-color: #e3f4ff;
-    color: orange;
+    background-color: rgb(238, 251, 255);
+    color: rgb(73, 1, 73);
     text-align: left;
     padding-left: 20px;
     display: grid;
     grid-template-columns: 20px auto;
     column-gap: 20px;
-    row-gap: 5px;
+    row-gap:2px;
 }
 .listOfCheckboxes label {
-    color: rgb(220, 105, 33);
+    color: rgb(73, 1, 73);
 }
 .listOfCheckboxes input[type="checkbox"] {
     width: 1em;

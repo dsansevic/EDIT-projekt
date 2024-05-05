@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { Select } from '../../inputs';
-import axios from 'axios';
 
 function FilterVolunteers({ volunteers, setFilteredVolunteers }) {
     const [filterTown, setFilterTown] = useState('');
@@ -46,11 +45,12 @@ function FilterVolunteers({ volunteers, setFilteredVolunteers }) {
     }
 
     return (
-        <div>
+        <div className="col-lg-11 d-flex align-items-center justify-content-between">
+            <p>Filtriraj po jednom ili oba parametra</p>
             <Select value={filterTown.town} url="address" name="town" onChange={handleTownChange}/>
             <Select value={filterJob} url="jobs" name="job" onChange={handleJobChange}/>
-            <button onClick={handleApplyFilter}>Primijeni filter</button>
-            <button onClick={handleRemoveFilter}>Ukloni filtere</button>
+            <button className="btn btn-info btn-md" onClick={handleApplyFilter}>Primijeni filter</button>
+            <button className="btn btn-warning btn-md" onClick={handleRemoveFilter}>Ukloni filtere</button>
             {noFilteredVolunteers && <p>Nema podataka za prikaz</p>}
         </div>
     );
