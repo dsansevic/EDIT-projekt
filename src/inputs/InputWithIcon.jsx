@@ -13,7 +13,7 @@ function InputWithIcon({ name, value, inputChange, icon, autoFocus }) {
     return (
         <div className="input-group mb-3" style={{ maxWidth: '300px' }}>
             <span className="input-group-text" id="basic-addon1">
-                <FontAwesomeIcon icon={icon} />
+                <FontAwesomeIcon icon={icon} style={{ color: "#9b3a02" }} />
             </span>
             <input
                 type="text"

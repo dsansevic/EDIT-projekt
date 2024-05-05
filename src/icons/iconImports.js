@@ -11,9 +11,11 @@ import {
     faPhone,
     faHandshakeAngle,
     faCircleInfo,
+    faCircleUser,
     faEarthEurope,
     faUsers,
-    faSpinner 
+    faSpinner,
+    faClock
 } from '@fortawesome/free-solid-svg-icons';
 
 export { 
@@ -28,7 +30,9 @@ export {
     faPhone,
     faHandshakeAngle,
     faCircleInfo,
+    faCircleUser,
     faEarthEurope,
     faUsers,
-    faSpinner
+    faSpinner, 
+    faClock
 };

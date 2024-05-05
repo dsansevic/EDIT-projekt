@@ -179,7 +179,22 @@
       "average_grade": "",
       "grade_count": "",
       "comments": [
-        {}
+        {
+          "name": "Ivona",
+          "content": "Odlična!"
+        },
+        {
+          "name": "Ivana",
+          "content": "Odlična!"
+        },
+        {
+          "name": "Saša",
+          "content": "Uvijek spremna pomoći!"
+        },
+        {
+          "name": "Marko",
+          "content": "Dobra"
+        }
       ]
     },
     {
@@ -196,7 +211,18 @@
       "average_grade": "",
       "grade_count": "",
       "comments": [
-        {}
+        {
+          "name": "ivana",
+          "content": "Odlična"
+        },
+        {
+          "name": "Antonija",
+          "content": "Susretljiva i pažljiva."
+        },
+        {
+          "name": "d",
+          "content": "dd"
+        }
       ]
     },
     {
@@ -230,9 +256,7 @@
       "grades": [],
       "average_grade": "",
       "grade_count": "",
-      "comments": [
-        {}
-      ]
+      "comments": []
     },
     {
       "id": "b98c",
@@ -249,7 +273,10 @@
       "average_grade": "",
       "grade_count": "",
       "comments": [
-        {}
+        {
+          "name": "Ratko",
+          "content": "Srdačna"
+        }
       ]
     },
     {
@@ -266,9 +293,7 @@
       "grades": [],
       "average_grade": "",
       "grade_count": "",
-      "comments": [
-        {}
-      ]
+      "comments": []
     },
     {
       "id": "ec70",
@@ -283,9 +308,7 @@
       "grades": [],
       "average_grade": "",
       "grade_count": "",
-      "comments": [
-        {}
-      ]
+      "comments": []
     }
   ],
   "associations": [

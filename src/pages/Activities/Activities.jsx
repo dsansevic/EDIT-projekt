@@ -45,11 +45,13 @@ function Activities() {
         <div className="container">
             <h1>Aktivnosti</h1>
             <p className="treciRed">koje provode naše udruge. Prijavi se!</p>
-            {showAddActivityForm && !showDetaljnije ? (
-                <button className="btn btn-info" onClick={hideAddForm}>Dodaj novu aktivnost</button>
-            ) : !showDetaljnije && (
-                <AddNewActivity action={showAddForm} setActivities={setActivities} />
-            )}
+            <div className="d-flex justify-content-center mb-3"> 
+                {showAddActivityForm && !showDetaljnije ? (
+                    <button className="btn btn-warning" onClick={hideAddForm}>Dodaj novu aktivnost</button>
+                ) : !showDetaljnije && (
+                    <AddNewActivity action={showAddForm} setActivities={setActivities} />
+                )}
+            </div>
             {showDetaljnije && selectedActivity && (
                 <div>
                     <button className="btn btn-secondary" onClick={hideDetails}>Sakrij</button>

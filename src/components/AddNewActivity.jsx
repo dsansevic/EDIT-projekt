@@ -32,17 +32,43 @@ function AddNewActivity({ setActivities, action }) {
     }
 
     return (
+        <div className="add-new-activity-container">
         <form onSubmit={sendData}>
-            <InputWithIcon value={formData.name} inputChange={inputChange} name="name" icon={faHandshakeAngle}/>
-            <InputWithIcon value={formData.address} name="address" inputChange={inputChange} icon={faMapLocationDot} />
-            <InputWithIcon value={formData.info} name="info" inputChange={inputChange} icon={faCircleInfo} />
-            <InputWithIcon value={formData.association} name="association" inputChange={inputChange} icon={faUsers}/>
-            <Select value={formData.town} onChange={inputChange} name="town" url="address"/>
-            <input type="date" name="date" value={formData.date} onChange={inputChange} />
-
-            <button type="submit">Pošalji</button>
-            <button onClick={action}>Odustani</button>
+            <div className="row">
+                <div className="col">
+                    <p>Ispuni podatke:</p>
+                </div>
+            </div>
+            <div className="row">
+                <div className="col">
+                    <InputWithIcon value={formData.name} inputChange={inputChange} name="name" icon={faHandshakeAngle} placeholder="Naziv aktivnosti" />
+                </div>
+                <div className="col">
+                    <InputWithIcon value={formData.address} name="address" inputChange={inputChange} icon={faMapLocationDot} placeholder="Adresa" />
+                </div>
+                <div className="col">
+                    <InputWithIcon value={formData.info} name="info" inputChange={inputChange} icon={faCircleInfo} placeholder="Informacije" />
+                </div>
+            </div>
+            <div className="row">
+                <div className="col">
+                    <InputWithIcon value={formData.association} name="association" inputChange={inputChange} icon={faUsers} placeholder="Udruga" />
+                </div>
+                <div className="col">
+                    <Select value={formData.town} onChange={inputChange} name="town" url="address" placeholder="Grad" />
+                </div>
+                <div className="col">
+                    <input className="form-control" type="date" name="date" value={formData.date} onChange={inputChange} />
+                </div>
+            </div>
+            <div className="row">
+                <div className="col">
+                    <button type="submit" className="btn btn-info">Pošalji</button>
+                    <button type="button" className="btn btn-light" onClick={action}>Odustani</button>
+                </div>
+            </div>
         </form>
+        </div>
     );
 }
 

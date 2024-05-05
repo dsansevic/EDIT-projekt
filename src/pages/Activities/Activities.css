@@ -1,0 +1,43 @@
+/*--------------------------------------- ActivityCard------------------------------------------- */
+
+.activity_cards {
+    margin-top: 20px;
+    padding: 5px;
+    border-radius: 5%;
+    padding: 15px !important; 
+}
+.custom-card-activity {
+    box-shadow: 2px 0 0 0.2rem rgb(237, 223, 200) !important;
+}
+.actTitle {
+    color:  rgb(17, 153, 163);
+    font-weight: 700;
+    font-style: italic;
+}
+
+.actP {
+    color: #9b3a02;
+}
+.actImg {
+    border-top-left-radius: 2em !important;
+    border-top-right-radius: 2em !important;
+    opacity: 0.9;
+    background: linear-gradient(to right, rgb(241, 198, 157), transparent);
+    margin-bottom: 10px;
+}
+/* .activity_cards .col:nth-child(odd) .actCard {
+    background-color:rgb(227, 227, 148);
+}
+
+.activity_cards .col:nth-child(even) .actCard {
+    background-color: rgb(150, 198, 214);
+}  */
+
+/*--------------------------------------- AddNewActivity------------------------------------------- */
+
+
+.add-new-activity-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

@@ -30,7 +30,7 @@ function Volunteers() {
                         <div className="col-lg-6">
                             <div className="row">
                                 {filteredVolunteers.map((volunteer) => (
-                                    <VolunteerCard key={volunteer.id} volunteer={volunteer} setVolunteers={setFilteredVolunteers} updateAll={setVolunteers} />
+                                    <VolunteerCard key={volunteer.id} volunteer={volunteer} volunteers={volunteers} setVolunteers={setFilteredVolunteers} updateAll={setVolunteers} />
 
                                 ))}
                             </div>
@@ -50,7 +50,7 @@ function Volunteers() {
                             <div className="row">
                                 {filteredVolunteers.map((volunteer) => (
                                     
-                                    <VolunteerCard key={volunteer.id} volunteer={volunteer} setVolunteers={setFilteredVolunteers} updateAll={setVolunteers} />
+                                    <VolunteerCard key={volunteer.id} volunteer={volunteer}  volunteers={volunteers} setVolunteers={setFilteredVolunteers} updateAll={setVolunteers} />
                                 ))}
                             </div>
                         </div>

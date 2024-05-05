@@ -39,19 +39,49 @@ function AddNewAssociation({ action }) {
         }, 5000) // makni nakon 5
     };
 
+    const handleCancel = () => {
+        setFormData({
+            name: "",
+            town: "",
+            address: ""
+        });
+        setAddMode(false);
+    };
+
     return (
         <>
             {addMode ? (
-                <div className="container">
-                    <form onSubmit={handleFormSubmit}>
-                        <InputWithIcon name="name" value={formData.name} icon ={faHandHoldingHeart} inputChange={inputChange} autoFocus={true}/>
-                        <InputWithIcon name="address" value={formData.address} icon={faMapLocationDot} inputChange={inputChange}/>
-                        <Select value={formData.town} url="address" name="town" onChange={inputChange}/>
-                        <button type='submit' className="btn btn-light btn-md">Pošalji</button>
-                    </form>
-                </div>
+                <div className="d-flex justify-content-center mb-3">
+                <form onSubmit={handleFormSubmit}>
+                    <div className="row">
+                        <div className="col">
+                            <p>Ispuni: </p>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col">
+                            <InputWithIcon name="name" value={formData.name} icon={faHandHoldingHeart} inputChange={inputChange} autoFocus={true}/>
+                        </div>
+                        <div className="col">    
+                            <InputWithIcon name="address" value={formData.address} icon={faMapLocationDot} inputChange={inputChange}/>
+                        </div>
+                        <div className="col">
+                            <Select value={formData.town} url="address" name="town" onChange={inputChange}/>
+                        </div>
+                    </div>
+                    <div className="row justify-content-center">
+                        <div className="col-2 d-flex justify-content-end">
+                            <button type='submit' className="btn btn-info btn-md">Pošalji</button>
+                        </div>
+                        <div className="col-2 d-flex justify-content-start">
+                            <button type='button' className="btn btn-light btn-md" onClick={handleCancel}>Odustani</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
             ) : (
-                <button className="btn btn-light btn-LG" onClick={() => setAddMode(true)}>Prijavi svoju udrugu</button>
+                <button className="btn btn-warning btn-LG" onClick={() => setAddMode(true)}>Prijavi svoju udrugu</button>
             )}
 
             {showModal && (

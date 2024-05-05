@@ -21,7 +21,7 @@ function prepareDataForSending( type, object ) {
                 "grades": [],
                 "average_grade": "",
                 "grade_count": "",
-                "comments": [{}]
+                "comments": []
             };
         default:
             return {};

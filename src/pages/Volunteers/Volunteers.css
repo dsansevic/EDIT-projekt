@@ -45,6 +45,11 @@ p{
 /* p {
     color: rgb(124, 84, 18)
 } */
+
+img {
+    border-radius:  0!important;
+    overflow: hidden;
+  }
 .prviRed {
     color: rgb(185, 130, 42);
     font-size: 20px;

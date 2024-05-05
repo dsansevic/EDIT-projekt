@@ -1,9 +1,9 @@
 import { useState, useContext } from "react";
 import { AdminContext } from "../contexts/AdminContext";
 import { FontAwesomeIcon, faHouseChimney, faPenToSquare, faHandHoldingHeart, faPhone } from '../icons/iconImports';
-import {Delete, EditVolunteer, VolunteerCommentAndRating } from "./"
+import {Delete, EditVolunteer } from "./"
 
-function VolunteerCard({ volunteer, setVolunteers, updateAll }) {
+function VolunteerCard({ volunteer, volunteers, setVolunteers, updateAll }) {
   const {admin} = useContext(AdminContext);
   const [editModeOn, setEditModeOn] = useState(false);
 
@@ -20,7 +20,7 @@ function VolunteerCard({ volunteer, setVolunteers, updateAll }) {
           </div>
           <h5 className="card-title">{volunteer.name}</h5>
 
-          {/* {volunteer.jobs && <i>{volunteer.jobs.map(job => job).join(", ")}</i>} */}
+          {volunteer.jobs && <i>{volunteer.jobs.map(job => job).join(", ")}</i>}
           
           <div className="p-3">
             
@@ -33,17 +33,16 @@ function VolunteerCard({ volunteer, setVolunteers, updateAll }) {
               />
             ) : (
             <>
-            
               <div className="d-flex align-items-center">
-                <FontAwesomeIcon icon={faHouseChimney} style={{color: "#74C0FC",}} />
+                <FontAwesomeIcon icon={faHouseChimney} style={{color: "#7B3E12",}} />
                 <p className="card-text mb-0 flex-grow-1">{volunteer.town}</p>
               </div>
               <div className="d-flex align-items-center">
-                <FontAwesomeIcon icon={faHandHoldingHeart} style={{color: "#74C0FC",}} />
+                <FontAwesomeIcon icon={faHandHoldingHeart} style={{color: "#7B3E12",}} />
                 <p className="card-text mb-0 flex-grow-1">{volunteer.association ? volunteer.association : "Nema podataka"}</p>
               </div>
-                <div className="d-flex align-items-center">
-                <FontAwesomeIcon icon={faPhone} style={{color: "#74C0FC",}} />
+              <div className="d-flex align-items-center">
+                <FontAwesomeIcon icon={faPhone} style={{color: "#7B3E12",}} />
               <p className="card-text mb-0 flex-grow-1">+{volunteer.contact_number}</p>
               </div>
           
@@ -56,20 +55,23 @@ function VolunteerCard({ volunteer, setVolunteers, updateAll }) {
             </>
             )}
           </div>
-
-          {/* ovo maknit ako ne napravin do kraja !!!!!   ILI STAVIT KO MODAL!! */}
-          <button type="button" className="btn btn-light mt-auto" data-bs-toggle="offcanvas" data-bs-target={`#offcanvas-${volunteer.id}`}>Ocijeni</button>
-          </div>
-          </div>
-          <div className="offcanvas offcanvas-start" tabIndex="-1" id={`offcanvas-${volunteer.id}`}>
-            <div className="offcanvas-header">
-              <h5 className="offcanvas-title">{volunteer.name}</h5>
-              <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <button type="button" className="btn btn-light mt-auto" data-bs-toggle="modal" data-bs-target={`#modal-${volunteer.id}`}>Ocijeni</button>
+          
+          <div className="modal fade" id={`modal-${volunteer.id}`} tabIndex="-1">
+            <div className="modal-dialog">
+              <div className="modal-content">
+                <div className="modal-header">
+                  <h5 className="modal-title">{volunteer.name}</h5>
+                  <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+              <div className="modal-body">
             </div>
-          {/* <div className="offcanvas-body">          
-            <VolunteerCommentAndRating comments={volunteer.comments} averageGrade={volunteer.average_grade} grade_count = {volunteer.grade_count} />
-          </div> */}
+         </div>
+  </div>
+</div>
+          
         </div>
+      </div>
     </div>
   );
 }
