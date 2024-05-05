@@ -20,8 +20,7 @@ function VolunteerCard({ volunteer, setVolunteers, updateAll }) {
           </div>
           <h5 className="card-title">{volunteer.name}</h5>
 
-          {/* zašto odjednom ne radii??? */}
-          {/* <i>{volunteer.jobs.map(job => job).join(", ")}</i> */}
+          <i>{volunteer.jobs.map(job => job).join(", ")}</i>
           
           <div className="p-3">
             
