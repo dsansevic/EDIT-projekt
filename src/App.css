@@ -13,3 +13,21 @@
 .read-the-docs {
   color: #888;
 }
+
+.drugiRed {
+  color: rgb(70, 49, 70);
+  font-size: 20px;
+  text-align: center;
+  margin: 30px 60px 30px 60px;
+  letter-spacing: .2rem;
+}
+
+.footer {
+  position: fixed; 
+  font-size: 20px;
+  bottom: 0;
+  right: 0; 
+  width: max-content; 
+  padding: 30px;
+  text-align: right; 
+}

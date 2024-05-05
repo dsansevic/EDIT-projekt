@@ -39,12 +39,12 @@ function PendingAssociationTable({ associations, setAssociations }) {
     return (
         <div className="container">
             <p>Udruge koje čekaju na odobrenje:</p>
-            <table className="table">
+            <table className="table table-striped">
                 <thead>
                     <tr>
-                        <th scope="col"> Naziv </th>
-                        <th scope="col"> Grad </th>
-                        <th scope="col"> Adresa </th>
+                        <th scope="col">🤝 Naziv </th>
+                        <th scope="col">🌏 Grad </th>
+                        <th scope="col">📍 Adresa </th>
                         <th scope="col"></th>
                         <th scope="col"></th>
                     </tr>

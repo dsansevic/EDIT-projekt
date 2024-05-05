@@ -41,3 +41,37 @@
     display: flex;
     justify-content: center;
 }
+
+/* --------------------------------------DetailedActivityCard-------------------------------------- */
+
+.obicnaSlika
+{
+    margin-top: 100px;
+    border: none;
+    border-radius: 5%;
+    border-bottom-left-radius: none !important;
+    background: transparent !important;
+    max-width: 500px;
+}
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: left;
+    color: rgb(70, 5, 70);
+}
+.activityName {
+    color: purple;
+    margin: 20px 0 20px 0;
+}
+
+.detaljnije {
+    color: rgb(3, 50, 97);
+}
+.activityInfo {
+    font-size: 20px;
+}
+.acivityVol {
+    padding: 0 30px 30px 30px;
+    font-style: italic;
+    color: darkred;
+}

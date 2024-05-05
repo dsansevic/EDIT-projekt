@@ -44,7 +44,7 @@ function NameInput({ value, onChange, button, handlePosalji }) {
                     onChange={inputChange}
                     ref={selectRef}
                 />
-            {button && <button className="btn btn-secondary" onClick={handlePosalji}>Pošalji</button>}
+            {button && <button className="btn btn-info" onClick={handlePosalji}>Pošalji</button>}
             </div>
             {nameValidation && <div className="error-message"><p style={{ color: 'red', textAlign:'center' }}>{nameValidation}</p></div>}
         </div>

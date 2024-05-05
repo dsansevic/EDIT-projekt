@@ -32,7 +32,7 @@ function ActivityNameInput({ activity, setActivities }) {
 
     return (
         <>
-            <p>Prijavi se</p>
+            <p>Za prijavu je potrebno unijeti ime i prezime</p>
             <NameInput value={newVolunteer} onChange={(val) => setNewVolunteer(val)} button={true} handlePosalji={sendData} />
         </>
     );
