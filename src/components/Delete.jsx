@@ -18,8 +18,8 @@ function Delete({id, update, updateAll, url, filter})
             {deleteState ? (
                 <div>
                     Jeste li sigurni da želite obrisati?
-                    <button onClick={deleteById}>Da</button>
-                    <button onClick={() => setDeleteState(false)}>Ne</button>
+                    <button className="btn btn-light btn-sm mr-2" onClick={deleteById}>Da</button>
+                    <button className="btn btn-danger btn-sm" onClick={() => setDeleteState(false)}>Ne</button>
                 </div>
             ) : (
                 <button onClick={() => setDeleteState(true)}><FontAwesomeIcon icon={faTrashCan} className="mr-2" /></button>

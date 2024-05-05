@@ -1,8 +1,7 @@
 import { InputWithIcon, Select } from "../inputs";
 import { useState } from "react";
 import {faMapLocationDot, faHandshakeAngle, faCircleInfo, faEarthEurope, faUsers } from "../icons/iconImports";
-import prepareDataForSending from "../PrepareDataForSending";
-import AxiosPost from "../AxiosPost";
+import {prepareDataForSending, AxiosPost} from "../Utils";
 
 function AddNewActivity({ setActivities, action }) {
     const [formData, setFormData] = useState({

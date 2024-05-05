@@ -1,9 +1,8 @@
 import { useState } from "react";
-import axios from "axios";
 import { InputWithIcon, Select } from "../../inputs";
 import { faHandHoldingHeart, faMapLocationDot} from "../../icons/iconImports"
 import "./Associations.css";
-import AxiosPost from "../../AxiosPost";
+import AxiosPost from "../../Utils/AxiosPost";
 
 function AddNewAssociation({ action }) {
     const [addMode, setAddMode] = useState(false);

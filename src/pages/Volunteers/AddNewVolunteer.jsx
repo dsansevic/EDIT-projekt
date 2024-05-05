@@ -3,8 +3,7 @@ import {Select, JobSelect, NameInput, RadioButtons, InputWithIcon} from "../../i
 import { faHandHoldingHeart } from "../../icons/iconImports";
 import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
-import prepareDataForSending from "../../PrepareDataForSending";
-import AxiosPost from "../../AxiosPost";
+import {prepareDataForSending, AxiosPost} from "../../Utils/";
 
 function AddNewVolunteer({setVolunteers, updateAll}) {
     const [imageSelected, setImageSelected] = useState(false);
